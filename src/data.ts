@@ -425,17 +425,5 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
     filename: 'maharibath.pdf',
     coverColor: 'bg-violet-800',
     pdfUrl: 'https://drive.google.com/file/d/151d0qqi49aMLyNIyb9_JgRk11H1_bsD5/view?usp=sharing'
-  },
-  {
-    id: '7',
-    title: 'வேதத்திற்கு அறிமுகம்',
-    author: 'பண்டைய அறிஞர்கள்',
-    year: 'பண்டைய காலம்',
-    category: 'விளக்க உரை',
-    tags: ['தத்துவம்', 'வரலாறு', 'சமஸ்கிருதம்'],
-    summary: 'நான்கு வேதங்களுக்கும் அவற்றின் அமைப்பு மற்றும் முக்கியத்துவம் பற்றிய விரிவான வழிகாட்டி மற்றும் அறிமுகம்.',
-    filename: 'intro_to_vedham.pdf',
-    coverColor: 'bg-amber-950',
-    pdfUrl: 'https://raw.githubusercontent.com/mozilla/pdf.js/ba2edeae/web/compressed.tracemonkey-pldi-09.pdf'
   }
 ];
