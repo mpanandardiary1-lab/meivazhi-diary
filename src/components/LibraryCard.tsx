@@ -43,7 +43,7 @@ export function LibraryCard({ item, onReadPdf }: LibraryCardProps) {
       
       <div className={`h-40 ${item.coverColor} p-8 flex items-end relative overflow-hidden`}>
         <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent z-0"></div>
-        <div className="absolute top-6 right-6 opacity-20 group-hover:opacity-40 group-hover:scale-110 group-hover:rotate-12 transition-all duration-700 z-0">
+        <div className="absolute top-6 right-6 opacity-20 group-hover:opacity-40 group-hover:scale-110 group-hover:rotate-12 transition-all duration-700 z-0" aria-hidden="true">
           <BookOpen className="w-24 h-24 text-white" />
         </div>
         <div className="relative z-10 w-full">
@@ -78,7 +78,7 @@ export function LibraryCard({ item, onReadPdf }: LibraryCardProps) {
               )}
             </div>
           </div>
-          <h3 className="text-xl font-serif font-bold text-white leading-tight line-clamp-2 drop-shadow-lg group-hover:text-slate-100 transition-colors duration-300">
+          <h3 className="text-xl font-serif font-bold text-white leading-tight line-clamp-2 drop-shadow-lg group-hover:text-slate-100 transition-colors duration-300" title={item.title}>
             {item.title}
           </h3>
         </div>
