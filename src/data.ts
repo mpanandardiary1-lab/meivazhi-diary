@@ -2,14 +2,14 @@ import { LibraryItem } from './types';
 
 export const TAXONOMY = {
   categories: ['ரிக் வேதம்', 'யஜுர் வேதம்', 'சாம வேதம்', 'அதர்வ வேதம்', 'உபநிஷதங்கள்', 'விளக்க உரை'],
-  tags: ['சமஸ்கிருதம்', 'தமிழ்', 'தத்துவம்', 'மந்திரங்கள்', 'சடங்குகள்', 'ஆன்மீகம்', 'வரலாறு', 'காப்பகம்', 'சுயாதீன ஆய்வு', 'விநாயகர்', 'பைபிள்', 'சைவம்', 'ஆண்டவர்கள்', 'சமரச வேதம்']
+  tags: ['சமஸ்கிருதம்', 'தமிழ்', 'தத்துவம்', 'மந்திரங்கள்', 'சடங்குகள்', 'ஆன்மீகம்', 'வரலாறு', 'காப்பகம்', 'சுயாதீன ஆய்வு', 'விநாயகர்', 'பைபிள்', 'சைவம்', 'ஆண்டவர்கள்', 'சமரச வேதம்', 'தெய்வ நீதி', 'ஹதேஷ் குட்சி', 'ஆத்திசூடி', 'அன்று அன்று கிடைத்த அப்பம்', 'அரபு பாடங்களின் அர்த்தம்', 'இஸ்லாமிய படங்கள்', 'கியாமத் மகஸர் பாதை', 'மஹரிபத்']
 };
 
 export const INITIAL_LIBRARY: LibraryItem[] = [
   {
     id: '9',
     title: 'விகட விநாயகர் - பாகம் 1',
-    author: 'மெய்வழி புருஷோத்தம ஆனந்தர்',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
     year: '—',
     category: 'விளக்க உரை',
     tags: ['ஆன்மீகம்', 'தமிழ்', 'விநாயகர்'],
@@ -21,7 +21,7 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
   {
     id: '10',
     title: 'விகட விநாயகர் - பாகம் 2',
-    author: 'மெய்வழி புருஷோத்தம ஆனந்தர்',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
     year: '—',
     category: 'விளக்க உரை',
     tags: ['ஆன்மீகம்', 'தமிழ்', 'விநாயகர்'],
@@ -33,7 +33,7 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
   {
     id: '11',
     title: 'விகட விநாயகர் - பாகம் 3',
-    author: 'மெய்வழி புருஷோத்தம ஆனந்தர்',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
     year: '—',
     category: 'விளக்க உரை',
     tags: ['ஆன்மீகம்', 'தமிழ்', 'விநாயகர்'],
@@ -45,7 +45,7 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
   {
     id: '12',
     title: 'விகட விநாயகர் - பாகம் 4',
-    author: 'மெய்வழி புருஷோத்தம ஆனந்தர்',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
     year: '—',
     category: 'விளக்க உரை',
     tags: ['ஆன்மீகம்', 'தமிழ்', 'விநாயகர்'],
@@ -57,7 +57,7 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
   {
     id: '13',
     title: 'பைபிள் - சோராஸ்திரியம் & சைவம் - பாகம் 1',
-    author: 'மெய்வழி புருஷோத்தம ஆனந்தர்',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
     year: '—',
     category: 'விளக்க உரை',
     tags: ['ஆன்மீகம்', 'தமிழ்', 'பைபிள்', 'சைவம்'],
@@ -69,7 +69,7 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
   {
     id: '14',
     title: 'பைபிள் - சோராஸ்திரியம் & சைவம் - பாகம் 2',
-    author: 'மெய்வழி புருஷோத்தம ஆனந்தர்',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
     year: '—',
     category: 'விளக்க உரை',
     tags: ['ஆன்மீகம்', 'தமிழ்', 'பைபிள்', 'சைவம்'],
@@ -81,7 +81,7 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
   {
     id: '15',
     title: 'பைபிள் - சோராஸ்திரியம் & சைவம் - பாகம் 3',
-    author: 'மெய்வழி புருஷோத்தம ஆனந்தர்',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
     year: '—',
     category: 'விளக்க உரை',
     tags: ['ஆன்மீகம்', 'தமிழ்', 'பைபிள்', 'சைவம்'],
@@ -93,7 +93,7 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
   {
     id: '16',
     title: 'ஆண்டவர்களின் வாக்கியம் - பாகம் 1',
-    author: 'மெய்வழி புருஷோத்தம ஆனந்தர்',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
     year: '—',
     category: 'விளக்க உரை',
     tags: ['ஆன்மீகம்', 'தமிழ்', 'ஆண்டவர்கள்'],
@@ -105,7 +105,7 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
   {
     id: '17',
     title: 'ஆண்டவர்களின் வாக்கியம் - பாகம் 2',
-    author: 'மெய்வழி புருஷோத்தம ஆனந்தர்',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
     year: '—',
     category: 'விளக்க உரை',
     tags: ['ஆன்மீகம்', 'தமிழ்', 'ஆண்டவர்கள்'],
@@ -117,7 +117,7 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
   {
     id: '18',
     title: 'ஆண்டவர்களின் வாக்கியம் - பாகம் 3',
-    author: 'மெய்வழி புருஷோத்தம ஆனந்தர்',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
     year: '—',
     category: 'விளக்க உரை',
     tags: ['ஆன்மீகம்', 'தமிழ்', 'ஆண்டவர்கள்'],
@@ -129,7 +129,7 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
   {
     id: '19',
     title: 'ஆண்டவர்களின் வாக்கியம் - பாகம் 4',
-    author: 'மெய்வழி புருஷோத்தம ஆனந்தர்',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
     year: '—',
     category: 'விளக்க உரை',
     tags: ['ஆன்மீகம்', 'தமிழ்', 'ஆண்டவர்கள்'],
@@ -141,7 +141,7 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
   {
     id: '20',
     title: 'சமரச வேத எண்ணம் - பாகம் 1',
-    author: 'மெய்வழி புருஷோத்தம ஆனந்தர்',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
     year: '—',
     category: 'விளக்க உரை',
     tags: ['ஆன்மீகம்', 'தமிழ்', 'சமரச வேதம்'],
@@ -153,7 +153,7 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
   {
     id: '21',
     title: 'சமரச வேத எண்ணம் - பாகம் 2',
-    author: 'மெய்வழி புருஷோத்தம ஆனந்தர்',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
     year: '—',
     category: 'விளக்க உரை',
     tags: ['ஆன்மீகம்', 'தமிழ்', 'சமரச வேதம்'],
@@ -165,7 +165,7 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
   {
     id: '22',
     title: 'சமரச வேத எண்ணம் - பாகம் 3',
-    author: 'மெய்வழி புருஷோத்தம ஆனந்தர்',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
     year: '—',
     category: 'விளக்க உரை',
     tags: ['ஆன்மீகம்', 'தமிழ்', 'சமரச வேதம்'],
@@ -177,7 +177,7 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
   {
     id: '23',
     title: 'சமரச வேத எண்ணம் - பாகம் 4',
-    author: 'மெய்வழி புருஷோத்தம ஆனந்தர்',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
     year: '—',
     category: 'விளக்க உரை',
     tags: ['ஆன்மீகம்', 'தமிழ்', 'சமரச வேதம்'],
@@ -185,6 +185,246 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
     filename: 'samarasa_vetha_ennam_part4.pdf',
     coverColor: 'bg-emerald-900',
     pdfUrl: 'https://drive.google.com/file/d/1-iUQUa8FihEg8cmXQdOIM9SL9UqhsWFg/view?usp=sharing'
+  },
+  {
+    id: '24',
+    title: 'தெய்வ நீதி - பாகம் 1',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
+    year: '—',
+    category: 'விளக்க உரை',
+    tags: ['ஆன்மீகம்', 'தமிழ்', 'தெய்வ நீதி'],
+    summary: 'தெய்வ நீதி ஆன்மீக நூலின் முதல் பாகம்; தெய்வீக நீதி மற்றும் ஆன்மீக உபதேசங்களை உள்ளடக்கியது.',
+    filename: 'theiva_neethi_part1.pdf',
+    coverColor: 'bg-rose-900',
+    pdfUrl: 'https://drive.google.com/file/d/1-r9LYfgy5MMtzGYyLD8NbSjpI01zQsCa/view?usp=sharing'
+  },
+  {
+    id: '25',
+    title: 'தெய்வ நீதி - பாகம் 2',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
+    year: '—',
+    category: 'விளக்க உரை',
+    tags: ['ஆன்மீகம்', 'தமிழ்', 'தெய்வ நீதி'],
+    summary: 'தெய்வ நீதி ஆன்மீக நூலின் இரண்டாம் பாகம்; தொடர்ச்சியான தெய்வீக நீதி உபதேசங்களை வழங்குகிறது.',
+    filename: 'theiva_neethi_part2.pdf',
+    coverColor: 'bg-pink-900',
+    pdfUrl: 'https://drive.google.com/file/d/10ArWIw9ZMFfkdmnBb-mTLnTlWqbU6hKf/view?usp=sharing'
+  },
+  {
+    id: '26',
+    title: 'தெய்வ நீதி - பாகம் 3',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
+    year: '—',
+    category: 'விளக்க உரை',
+    tags: ['ஆன்மீகம்', 'தமிழ்', 'தெய்வ நீதி'],
+    summary: 'தெய்வ நீதி ஆன்மீக நூலின் மூன்றாம் பாகம்; ஆழமான தெய்வீக நீதி சிந்தனைகள் மற்றும் உபதேசங்களை உள்ளடக்கியது.',
+    filename: 'theiva_neethi_part3.pdf',
+    coverColor: 'bg-fuchsia-900',
+    pdfUrl: 'https://drive.google.com/file/d/10BmoTQGcuuv0qexVz-Pf0f7LWCIlefXJ/view?usp=sharing'
+  },
+  {
+    id: '27',
+    title: 'தெய்வ நீதி - பாகம் 4',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
+    year: '—',
+    category: 'விளக்க உரை',
+    tags: ['ஆன்மீகம்', 'தமிழ்', 'தெய்வ நீதி'],
+    summary: 'தெய்வ நீதி ஆன்மீக நூலின் நான்காம் பாகம்; தொடர் நூலின் இறுதிப் பகுதி; தெய்வீக நீதி உபதேசங்களை நிறைவு செய்கிறது.',
+    filename: 'theiva_neethi_part4.pdf',
+    coverColor: 'bg-purple-900',
+    pdfUrl: 'https://drive.google.com/file/d/10EA7Do6kdilsUqhikeOBH8unBi-TmYaz/view?usp=sharing'
+  },
+  {
+    id: '28',
+    title: 'ஹதேஷ் குட்சி',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
+    year: '—',
+    category: 'விளக்க உரை',
+    tags: ['ஆன்மீகம்', 'தமிழ்', 'ஹதேஷ் குட்சி'],
+    summary: 'ஹதேஷ் குட்சி ஆன்மீக நூல்; ஆன்மீக உபதேசங்கள் மற்றும் தத்துவ சிந்தனைகளை உள்ளடக்கியது.',
+    filename: 'hathesh_kutsi.pdf',
+    coverColor: 'bg-lime-900',
+    pdfUrl: 'https://drive.google.com/file/d/10FFKBpUFoSaeF-TdZNBjNrWkgfJ-0ZgY/view?usp=sharing'
+  },
+  {
+    id: '29',
+    title: 'ஆத்திசூடி - பாகம் 1',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
+    year: '—',
+    category: 'விளக்க உரை',
+    tags: ['ஆன்மீகம்', 'தமிழ்', 'ஆத்திசூடி'],
+    summary: 'ஆத்திசூடி ஆன்மீக நூலின் முதல் பாகம்; ஆன்மீக உபதேசங்கள் மற்றும் தத்துவ சிந்தனைகளை உள்ளடக்கியது.',
+    filename: 'aathisudi_part1.pdf',
+    coverColor: 'bg-green-900',
+    pdfUrl: 'https://drive.google.com/file/d/11n65F-aGZF0FY9RtDWxPvT3Fu1c_mWXV/view?usp=sharing'
+  },
+  {
+    id: '30',
+    title: 'ஆத்திசூடி - பாகம் 2',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
+    year: '—',
+    category: 'விளக்க உரை',
+    tags: ['ஆன்மீகம்', 'தமிழ்', 'ஆத்திசூடி'],
+    summary: 'ஆத்திசூடி ஆன்மீக நூலின் இரண்டாம் பாகம்; தொடர்ச்சியான ஆன்மீக உபதேசங்கள் மற்றும் தத்துவ சிந்தனைகளை வழங்குகிறது.',
+    filename: 'aathisudi_part2.pdf',
+    coverColor: 'bg-green-800',
+    pdfUrl: 'https://drive.google.com/file/d/11n6KNdohqbC6WGPNKsAZW4ezo1-En6We/view?usp=sharing'
+  },
+  {
+    id: '31',
+    title: 'ஆத்திசூடி - பாகம் 3',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
+    year: '—',
+    category: 'விளக்க உரை',
+    tags: ['ஆன்மீகம்', 'தமிழ்', 'ஆத்திசூடி'],
+    summary: 'ஆத்திசூடி ஆன்மீக நூலின் மூன்றாம் பாகம்; ஆழமான தத்துவ சிந்தனைகள் மற்றும் ஆன்மீக உபதேசங்களை உள்ளடக்கியது.',
+    filename: 'aathisudi_part3.pdf',
+    coverColor: 'bg-emerald-800',
+    pdfUrl: 'https://drive.google.com/file/d/11oKBcmAg5mlQZy-Zt5GbCoqKvxL-3eEJ/view?usp=sharing'
+  },
+  {
+    id: '32',
+    title: 'அன்று அன்று கிடைத்த அப்பம் - பாகம் 1',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
+    year: '—',
+    category: 'விளக்க உரை',
+    tags: ['ஆன்மீகம்', 'தமிழ்', 'அன்று அன்று கிடைத்த அப்பம்'],
+    summary: 'அன்று அன்று கிடைத்த அப்பம் ஆன்மீக நூலின் முதல் பாகம்; ஆன்மீக உபதேசங்கள் மற்றும் தத்துவ சிந்தனைகளை உள்ளடக்கியது.',
+    filename: 'anru_anru_kidaitha_appam_part1.pdf',
+    coverColor: 'bg-orange-700',
+    pdfUrl: 'https://drive.google.com/file/d/13TEHQq4WjsRARjyh00pSntoq2f17J8xZ/view?usp=sharing'
+  },
+  {
+    id: '33',
+    title: 'அன்று அன்று கிடைத்த அப்பம் - பாகம் 2',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
+    year: '—',
+    category: 'விளக்க உரை',
+    tags: ['ஆன்மீகம்', 'தமிழ்', 'அன்று அன்று கிடைத்த அப்பம்'],
+    summary: 'அன்று அன்று கிடைத்த அப்பம் ஆன்மீக நூலின் இரண்டாம் பாகம்; தொடர்ச்சியான ஆன்மீக உபதேசங்கள் மற்றும் தத்துவ சிந்தனைகளை வழங்குகிறது.',
+    filename: 'anru_anru_kidaitha_appam_part2.pdf',
+    coverColor: 'bg-amber-700',
+    pdfUrl: 'https://drive.google.com/file/d/13TvFB9SG_b-7qTLn0ep4Qcnhlvk-37u5/view?usp=sharing'
+  },
+  {
+    id: '34',
+    title: 'அரபு பாடங்களின் அர்த்தம் - பாகம் 1',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
+    year: '—',
+    category: 'விளக்க உரை',
+    tags: ['ஆன்மீகம்', 'தமிழ்', 'அரபு பாடங்களின் அர்த்தம்'],
+    summary: 'அரபு பாடங்களின் அர்த்தம் ஆன்மீக நூலின் முதல் பாகம்; அரபு பாடங்களின் பொருள் விளக்கம் மற்றும் ஆன்மீக உபதேசங்களை உள்ளடக்கியது.',
+    filename: 'arabu_paadangalin_artham_part1.pdf',
+    coverColor: 'bg-red-900',
+    pdfUrl: 'https://drive.google.com/file/d/13WiET0N4SiRJuV_Y6B9fdz659tMn79gs/view?usp=sharing'
+  },
+  {
+    id: '35',
+    title: 'அரபு பாடங்களின் அர்த்தம் - பாகம் 2',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
+    year: '—',
+    category: 'விளக்க உரை',
+    tags: ['ஆன்மீகம்', 'தமிழ்', 'அரபு பாடங்களின் அர்த்தம்'],
+    summary: 'அரபு பாடங்களின் அர்த்தம் ஆன்மீக நூலின் இரண்டாம் பாகம்; தொடர்ச்சியான அரபு பாட விளக்கங்கள் மற்றும் உபதேசங்களை வழங்குகிறது.',
+    filename: 'arabu_paadangalin_artham_part2.pdf',
+    coverColor: 'bg-orange-900',
+    pdfUrl: 'https://drive.google.com/file/d/13a4Dc9oABHQnQLbKHdthCX5i_aqk2cKP/view?usp=sharing'
+  },
+  {
+    id: '36',
+    title: 'அரபு பாடங்களின் அர்த்தம் - பாகம் 3',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
+    year: '—',
+    category: 'விளக்க உரை',
+    tags: ['ஆன்மீகம்', 'தமிழ்', 'அரபு பாடங்களின் அர்த்தம்'],
+    summary: 'அரபு பாடங்களின் அர்த்தம் ஆன்மீக நூலின் மூன்றாம் பாகம்; ஆழமான அரபு பாட விளக்கங்கள் மற்றும் ஆன்மீக உபதேசங்களை உள்ளடக்கியது.',
+    filename: 'arabu_paadangalin_artham_part3.pdf',
+    coverColor: 'bg-amber-900',
+    pdfUrl: 'https://drive.google.com/file/d/13hEbL2O8UuLdFJ7YLTK_KlKMR84cxXyD/view?usp=sharing'
+  },
+  {
+    id: '37',
+    title: 'அரபு பாடங்களின் அர்த்தம் - பாகம் 4',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
+    year: '—',
+    category: 'விளக்க உரை',
+    tags: ['ஆன்மீகம்', 'தமிழ்', 'அரபு பாடங்களின் அர்த்தம்'],
+    summary: 'அரபு பாடங்களின் அர்த்தம் ஆன்மீக நூலின் நான்காம் பாகம்; தொடர் நூலின் இறுதிப் பகுதி; அரபு பாட விளக்கங்களை நிறைவு செய்கிறது.',
+    filename: 'arabu_paadangalin_artham_part4.pdf',
+    coverColor: 'bg-yellow-900',
+    pdfUrl: 'https://drive.google.com/file/d/13iRvW6CPdJbSGZv4G-vxDYu4Msg5eoPk/view?usp=sharing'
+  },
+  {
+    id: '38',
+    title: 'இஸ்லாமிய படங்கள்',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
+    year: '—',
+    category: 'விளக்க உரை',
+    tags: ['ஆன்மீகம்', 'தமிழ்', 'இஸ்லாமிய படங்கள்'],
+    summary: 'இஸ்லாமிய படங்கள் ஆன்மீக நூல்; இஸ்லாமிய ஆன்மீக படங்கள் மற்றும் விளக்க உரைகளை உள்ளடக்கியது.',
+    filename: 'islamiyam_padangal.pdf',
+    coverColor: 'bg-teal-800',
+    pdfUrl: 'https://drive.google.com/file/d/14Z8NcTeijsTWjxfkKXT9YTRieEPFK1ow/view?usp=sharing'
+  },
+  {
+    id: '39',
+    title: 'கியாமத் மகஸர் பாதை - பாகம் 1',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
+    year: '—',
+    category: 'விளக்க உரை',
+    tags: ['ஆன்மீகம்', 'தமிழ்', 'கியாமத் மகஸர் பாதை'],
+    summary: 'கியாமத் மகஸர் பாதை ஆன்மீக நூலின் முதல் பாகம்; ஆன்மீக உபதேசங்கள் மற்றும் தத்துவ சிந்தனைகளை உள்ளடக்கியது.',
+    filename: 'kiyaamath_makasar_paathai_part1.pdf',
+    coverColor: 'bg-indigo-700',
+    pdfUrl: 'https://drive.google.com/file/d/14ZFWXOyW2NiQthYjSeq3xsFmeGT_rT8e/view?usp=sharing'
+  },
+  {
+    id: '40',
+    title: 'கியாமத் மகஸர் பாதை - பாகம் 2',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
+    year: '—',
+    category: 'விளக்க உரை',
+    tags: ['ஆன்மீகம்', 'தமிழ்', 'கியாமத் மகஸர் பாதை'],
+    summary: 'கியாமத் மகஸர் பாதை ஆன்மீக நூலின் இரண்டாம் பாகம்; தொடர்ச்சியான ஆன்மீக உபதேசங்கள் மற்றும் தத்துவ சிந்தனைகளை வழங்குகிறது.',
+    filename: 'kiyaamath_makasar_paathai_part2.pdf',
+    coverColor: 'bg-blue-700',
+    pdfUrl: 'https://drive.google.com/file/d/14Zi0YbnOBtpf-OV7LQMAEDxsLKOojmZG/view?usp=sharing'
+  },
+  {
+    id: '41',
+    title: 'கியாமத் மகஸர் பாதை - பாகம் 3',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
+    year: '—',
+    category: 'விளக்க உரை',
+    tags: ['ஆன்மீகம்', 'தமிழ்', 'கியாமத் மகஸர் பாதை'],
+    summary: 'கியாமத் மகஸர் பாதை ஆன்மீக நூலின் மூன்றாம் பாகம்; ஆழமான தத்துவ சிந்தனைகள் மற்றும் ஆன்மீக உபதேசங்களை உள்ளடக்கியது.',
+    filename: 'kiyaamath_makasar_paathai_part3.pdf',
+    coverColor: 'bg-cyan-700',
+    pdfUrl: 'https://drive.google.com/file/d/14cRE703A3uecuunv8Zm-pfvaluWv86iD/view?usp=sharing'
+  },
+  {
+    id: '42',
+    title: 'கியாமத் மகஸர் பாதை - பாகம் 4',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
+    year: '—',
+    category: 'விளக்க உரை',
+    tags: ['ஆன்மீகம்', 'தமிழ்', 'கியாமத் மகஸர் பாதை'],
+    summary: 'கியாமத் மகஸர் பாதை ஆன்மீக நூலின் நான்காம் பாகம்; தொடர் நூலின் இறுதிப் பகுதி; ஆன்மீக உபதேசங்களை நிறைவு செய்கிறது.',
+    filename: 'kiyaamath_makasar_paathai_part4.pdf',
+    coverColor: 'bg-sky-700',
+    pdfUrl: 'https://drive.google.com/file/d/14hQIZl7ckyCLU_3f3puj6t7z9cTuHOoM/view?usp=sharing'
+  },
+  {
+    id: '43',
+    title: 'மஹரிபத்',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
+    year: '—',
+    category: 'விளக்க உரை',
+    tags: ['ஆன்மீகம்', 'தமிழ்', 'மஹரிபத்'],
+    summary: 'மஹரிபத் ஆன்மீக நூல்; ஆன்மீக உபதேசங்கள் மற்றும் தத்துவ சிந்தனைகளை உள்ளடக்கியது.',
+    filename: 'maharibath.pdf',
+    coverColor: 'bg-violet-800',
+    pdfUrl: 'https://drive.google.com/file/d/151d0qqi49aMLyNIyb9_JgRk11H1_bsD5/view?usp=sharing'
   },
   {
     id: '7',

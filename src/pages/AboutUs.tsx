@@ -7,7 +7,7 @@ export function AboutUs() {
   return (
     <div className="flex-1 max-w-5xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-12 flex flex-col gap-16 relative z-10 pt-24">
       <Helmet>
-        <title>எங்கள் காப்பகம் பற்றி - மெய்வழி புருஷோத்தம ஆனந்தர் ஆன்மீக நாட்குறிப்பு</title>
+        <title>எங்கள் காப்பகம் பற்றி - மெய்வழி புருஷோத்தம அனந்நர் ஆன்மீக நாட்குறிப்பு</title>
         <meta name="description" content="வரலாற்று ஆன்மீக நூல்கள் மற்றும் நாட்குறிப்புகளை ஆய்வு மற்றும் கல்வி நோக்கங்களுக்காகப் பாதுகாக்கும் எங்கள் சுயாதீன நோக்கத்தை அறியுங்கள்." />
         <link rel="canonical" href="https://mpanandardiary.com/about" />
       </Helmet>
@@ -19,7 +19,7 @@ export function AboutUs() {
       >
         <h1 className="text-5xl md:text-7xl font-serif font-bold text-slate-900 drop-shadow-sm tracking-tight text-gradient">தெய்வீக காப்பக நோக்கம்</h1>
         <p className="text-xl text-amber-800/80 max-w-3xl mx-auto font-serif italic">
-          "மெய்வழி புருஷோத்தம ஆனந்தரின் புனித உணர்வுகளையும் வரலாற்று பதிவுகளையும் பாதுகாப்பதற்கு அர்ப்பணிக்கப்பட்டது."
+          "மெய்வழி புருஷோத்தம அனந்நரின் புனித உணர்வுகளையும் வரலாற்று பதிவுகளையும் பாதுகாப்பதற்கு அர்ப்பணிக்கப்பட்டது."
         </p>
       </motion.div>
 
@@ -35,7 +35,7 @@ export function AboutUs() {
           </div>
           <h2 className="text-2xl font-serif font-bold text-slate-900 mb-4 group-hover:text-amber-700 transition-colors">எங்கள் காப்பக நோக்கம்</h2>
           <p className="text-slate-500 leading-relaxed group-hover:text-slate-700 transition-colors text-sm font-medium">
-            மெய்வழி புருஷோத்தம ஆனந்தர் ஆன்மீக நாட்குறிப்பு காப்பகம் வரலாற்று ஆன்மீக நாட்குறிப்புகள் மற்றும் குறுக்கு-பண்பாட்டு வேத ஆய்வுகளுக்கான டிஜிட்டல் களஞ்சியமாக சுயாதீன திட்டமாக நிறுவப்பட்டது. இந்த புனித பதிவுகள் உயர்தர டிஜிட்டல் வடிவத்தில் பாதுகாக்கப்படுவதே எங்கள் நோக்கம்.
+            மெய்வழி புருஷோத்தம அனந்நர் ஆன்மீக நாட்குறிப்பு காப்பகம் வரலாற்று ஆன்மீக நாட்குறிப்புகள் மற்றும் குறுக்கு-பண்பாட்டு வேத ஆய்வுகளுக்கான டிஜிட்டல் களஞ்சியமாக சுயாதீன திட்டமாக நிறுவப்பட்டது. இந்த புனித பதிவுகள் உயர்தர டிஜிட்டல் வடிவத்தில் பாதுகாக்கப்படுவதே எங்கள் நோக்கம்.
           </p>
         </motion.div>
 

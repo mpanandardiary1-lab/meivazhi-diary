@@ -130,7 +130,7 @@ export function Home() {
                 </div>
                 <div className="text-center space-y-2">
                   <div className="text-2xl font-serif font-bold text-slate-900">தெய்வீக ஞான காப்பகம்</div>
-                  <div className="text-sm text-amber-600 font-medium">மெய்வழி புருஷோத்தம ஆனந்தர் பதிவுகள்</div>
+                  <div className="text-sm text-amber-600 font-medium">மெய்வழி புருஷோத்தம அனந்நர் பதிவுகள்</div>
                 </div>
                 <div className="flex gap-2">
                   {[1,2,3,4,5].map(i => (
@@ -189,7 +189,7 @@ export function Home() {
               transition={{ delay: 0.1 }}
               className="text-lg text-slate-500 leading-relaxed font-serif"
             >
-              மெய்வழி புருஷோத்தம ஆனந்தரின் ஆன்மீக நூல்களின் முக்கிய தொகுப்புகளை ஆராயுங்கள். ஒவ்வொரு நூலும் உயர்தர டிஜிட்டல் வடிவத்தில் பாதுகாக்கப்பட்டுள்ளது.
+              மெய்வழி புருஷோத்தம அனந்நரின் ஆன்மீக நூல்களின் முக்கிய தொகுப்புகளை ஆராயுங்கள். ஒவ்வொரு நூலும் உயர்தர டிஜிட்டல் வடிவத்தில் பாதுகாக்கப்பட்டுள்ளது.
             </motion.p>
           </div>
 

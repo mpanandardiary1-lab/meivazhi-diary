@@ -248,7 +248,7 @@ export function Library() {
       </AnimatePresence>
 
       <Helmet>
-        <title>டிஜிட்டல் நூலகம் - மெய்வழி புருஷோத்தம ஆனந்தர் ஆன்மீக நாட்குறிப்பு</title>
+        <title>டிஜிட்டல் நூலகம் - மெய்வழி புருஷோத்தம அனந்நர் ஆன்மீக நாட்குறிப்பு</title>
         <meta name="description" content="ஆன்மீக பதிவுகள் மற்றும் வேத ஆய்வுகளின் விரிவான சுயாதீன காப்பகத்தை ஆராயுங்கள்; அறிவுசார் மற்றும் தனிப்பட்ட ஆய்வுக்காகப் பாதுகாக்கப்பட்டுள்ளது." />
         <link rel="canonical" href="https://mpanandardiary.com/library" />
       </Helmet>
@@ -263,7 +263,7 @@ export function Library() {
             தெய்வீக ஆய்வு பட்டியல்
           </h1>
           <p className="text-sm sm:text-lg text-amber-700 mt-2 italic font-serif">
-            "மெய்வழி புருஷோத்தம ஆனந்தரின் புனித உணர்வுகளைப் பாதுகாத்தல்."
+            "மெய்வழி புருஷோத்தம அனந்நரின் புனித உணர்வுகளைப் பாதுகாத்தல்."
           </p>
         </div>
 

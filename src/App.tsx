@@ -33,7 +33,7 @@ function Navigation() {
             <BookOpen className="w-5 h-5" />
           </div>
           <div>
-            <h1 className="text-lg font-serif font-bold text-slate-900 leading-none">புருஷோத்தம ஆனந்தர்</h1>
+            <h1 className="text-lg font-serif font-bold text-slate-900 leading-none">புருஷோத்தம அனந்நர்</h1>
             <p className="text-[9px] text-amber-600 font-bold uppercase tracking-[0.2em] mt-1 flex items-center gap-1">
               <Sparkles className="w-2.5 h-2.5" /> தெய்வீக காப்பகம்
             </p>
@@ -139,7 +139,7 @@ function Footer() {
                 <BookOpen className="w-5 h-5 relative z-10" />
               </div>
               <div>
-                <h2 className="text-lg font-serif font-bold tracking-tight text-slate-900">மெய்வழி புருஷோத்தம ஆனந்தர் ஆன்மீக நாட்குறிப்பு</h2>
+                <h2 className="text-lg font-serif font-bold tracking-tight text-slate-900">மெய்வழி புருஷோத்தம அனந்நர் ஆன்மீக நாட்குறிப்பு</h2>
                 <p className="text-[10px] text-amber-600 font-semibold uppercase tracking-[0.2em] flex items-center gap-1">
                   <Sparkles className="w-2.5 h-2.5" /> தெய்வீக டிஜிட்டல் நூலகம்
                 </p>
@@ -175,7 +175,7 @@ function Footer() {
             <strong>சுயாதீன கல்வி காப்பகம்:</strong> இந்த களஞ்சியம் ஆய்வு நோக்கங்களுக்காக மட்டுமே. எந்த அமைப்புடனும் இணைப்பில்லை. அனைத்து பொருட்களும் அறிவுசார் ஆய்வுக்காக "உள்ளபடியே" வழங்கப்படுகின்றன. உள்ளடக்கத்திற்கு உருவாக்குனர்கள் பொறுப்பேற்க மாட்டார்கள். பதிப்புரிமை அல்லது புகார் விசாரணைகளுக்கு எங்களைத் தொடர்பு கொள்ளவும்.
           </p>
           <p className="text-xs text-slate-500 font-medium whitespace-nowrap">
-            © {new Date().getFullYear()} மெய்வழி புருஷோத்தம ஆனந்தர் காப்பகம்.
+            © {new Date().getFullYear()} மெய்வழி புருஷோத்தம அனந்நர் காப்பகம்.
           </p>
         </div>
       </div>
