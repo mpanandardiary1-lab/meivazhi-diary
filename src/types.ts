@@ -8,5 +8,8 @@ export interface LibraryItem {
   summary: string;
   filename: string;
   coverColor: string;
+  /** Google Drive file ID — preview URL is derived at runtime, not stored. */
+  driveFileId?: string;
+  /** Direct PDF URL for non-Drive sources (admin / demo only). */
   pdfUrl?: string;
 }

@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { LibraryItem } from '../types';
-import { FileText, ExternalLink, Share2, Check } from 'lucide-react';
+import { FileText, Share2, Check } from 'lucide-react';
 import { motion } from 'motion/react';
 
 interface LibraryTableProps {
   items: LibraryItem[];
-  onReadPdf?: (url: string, title: string) => void;
+  onReadPdf?: (item: LibraryItem) => void;
 }
 
 const container = {
@@ -23,6 +23,15 @@ const itemAnim = {
   show: { opacity: 1, y: 0 }
 };
 
+function hasReadablePdf(item: LibraryItem): boolean {
+  return !!(item.driveFileId || (item.pdfUrl && item.pdfUrl !== '#'));
+}
+
+function getShareUrl(item: LibraryItem): string {
+  const base = `${window.location.origin}${window.location.pathname}`;
+  return `${base}?read=${item.id}`;
+}
+
 export function LibraryTable({ items, onReadPdf }: LibraryTableProps) {
   const [copiedId, setCopiedId] = useState<string | null>(null);
 
@@ -30,7 +39,7 @@ export function LibraryTable({ items, onReadPdf }: LibraryTableProps) {
     e.preventDefault();
     e.stopPropagation();
     
-    const shareUrl = item.pdfUrl && item.pdfUrl !== '#' ? item.pdfUrl : window.location.href;
+    const shareUrl = getShareUrl(item);
     const shareData = {
       title: item.title,
       text: `"${item.title}" - ${item.author} எழுதிய நூலைப் பாருங்கள்`,
@@ -114,20 +123,15 @@ export function LibraryTable({ items, onReadPdf }: LibraryTableProps) {
                     >
                       {copiedId === item.id ? <Check className="w-4 h-4" /> : <Share2 className="w-4 h-4" />}
                     </button>
-                    {item.pdfUrl && item.pdfUrl !== '#' ? (
-                      <a 
-                        href={item.pdfUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          if (onReadPdf) onReadPdf(item.pdfUrl!, item.title);
-                        }}
+                    {hasReadablePdf(item) ? (
+                      <button
+                        type="button"
+                        onClick={() => onReadPdf?.(item)}
                         className="h-10 px-6 glass-card border-none bg-slate-900 text-white flex items-center justify-center rounded-xl text-[10px] font-bold uppercase tracking-widest hover:bg-slate-800 shadow-xl transition-all cursor-pointer"
                         aria-label="PDF படியுங்கள்"
                       >
                         படியுங்கள்
-                      </a>
+                      </button>
                     ) : (
                       <span className="text-[10px] font-bold text-slate-300 uppercase">ஆஃப்லைன்</span>
                     )}

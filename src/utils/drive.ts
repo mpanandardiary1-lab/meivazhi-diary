@@ -1,41 +1,32 @@
 /**
  * Google Drive share links cannot be fetched directly in the browser (CORS).
- * Use the /preview embed URL for in-app viewing instead of pdf.js fetch.
+ * Store only file IDs in data; build preview URLs at runtime for iframe embeds.
  */
 
 const DRIVE_FILE_ID_REGEX = /drive\.google\.com\/(?:file\/d\/|open\?id=)([^/?&]+)/;
+const RAW_FILE_ID_REGEX = /^[\w-]{10,}$/;
 
-export function extractGoogleDriveFileId(url: string): string | null {
-  if (!url || typeof url !== 'string') return null;
-  const match = url.match(DRIVE_FILE_ID_REGEX);
-  return match?.[1] ?? null;
+export function extractGoogleDriveFileId(input: string): string | null {
+  if (!input || typeof input !== 'string') return null;
+  const trimmed = input.trim();
+  const match = trimmed.match(DRIVE_FILE_ID_REGEX);
+  if (match?.[1]) return match[1];
+  if (RAW_FILE_ID_REGEX.test(trimmed)) return trimmed;
+  return null;
 }
 
-export function isGoogleDriveUrl(url: string): boolean {
-  return extractGoogleDriveFileId(url) !== null;
+export function isGoogleDriveFileId(input: string): boolean {
+  return extractGoogleDriveFileId(input) !== null;
 }
 
 /** Embed URL that works in an iframe without CORS issues. */
-export function getGoogleDrivePreviewUrl(url: string): string | null {
-  const fileId = extractGoogleDriveFileId(url);
-  if (!fileId) return null;
+export function getGoogleDrivePreviewUrlFromId(fileId: string): string {
   return `https://drive.google.com/file/d/${fileId}/preview`;
 }
 
-/** @deprecated Drive files should use getGoogleDrivePreviewUrl + iframe, not pdf.js fetch. */
-export function convertGoogleDriveLink(url: string): string {
-  if (!url || typeof url !== 'string') return url;
-
-  const fileId = extractGoogleDriveFileId(url);
-  if (fileId) {
-    return `https://drive.google.com/uc?export=download&id=${fileId}`;
-  }
-
-  return url;
-}
-
-export function getGoogleDriveViewUrl(url: string): string | null {
-  const fileId = extractGoogleDriveFileId(url);
+/** Accepts a file ID or legacy full Drive URL. */
+export function getGoogleDrivePreviewUrl(input: string): string | null {
+  const fileId = extractGoogleDriveFileId(input);
   if (!fileId) return null;
-  return `https://drive.google.com/file/d/${fileId}/view`;
+  return getGoogleDrivePreviewUrlFromId(fileId);
 }
