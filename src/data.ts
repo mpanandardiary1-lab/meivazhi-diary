@@ -415,6 +415,18 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
     pdfUrl: 'https://drive.google.com/file/d/14hQIZl7ckyCLU_3f3puj6t7z9cTuHOoM/view?usp=sharing'
   },
   {
+    id: '43',
+    title: 'மஹரிபத்',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
+    year: '—',
+    category: 'விளக்க உரை',
+    tags: ['ஆன்மீகம்', 'தமிழ்', 'மஹரிபத்'],
+    summary: 'மஹரிபத் ஆன்மீக நூல்; ஆன்மீக உபதேசங்கள் மற்றும் தத்துவ சிந்தனைகளை உள்ளடக்கியது.',
+    filename: 'maharibath.pdf',
+    coverColor: 'bg-violet-800',
+    pdfUrl: 'https://drive.google.com/file/d/151d0qqi49aMLyNIyb9_JgRk11H1_bsD5/view?usp=sharing'
+  },
+  {
     id: '7',
     title: 'வேதத்திற்கு அறிமுகம்',
     author: 'பண்டைய அறிஞர்கள்',
