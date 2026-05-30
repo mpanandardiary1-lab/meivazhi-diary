@@ -2,7 +2,7 @@ import { LibraryItem } from './types';
 
 export const TAXONOMY = {
   categories: ['ரிக் வேதம்', 'யஜுர் வேதம்', 'சாம வேதம்', 'அதர்வ வேதம்', 'உபநிஷதங்கள்', 'விளக்க உரை'],
-  tags: ['சமஸ்கிருதம்', 'தமிழ்', 'தத்துவம்', 'மந்திரங்கள்', 'சடங்குகள்', 'ஆன்மீகம்', 'வரலாறு', 'காப்பகம்', 'சுயாதீன ஆய்வு', 'விநாயகர்', 'பைபிள்', 'சைவம்', 'ஆண்டவர்கள்', 'சமரச வேதம்', 'தெய்வ நீதி', 'ஹதேஷ் குட்சி', 'ஆத்திசூடி', 'அன்று அன்று கிடைத்த அப்பம்', 'அரபு பாடங்களின் அர்த்தம்']
+  tags: ['சமஸ்கிருதம்', 'தமிழ்', 'தத்துவம்', 'மந்திரங்கள்', 'சடங்குகள்', 'ஆன்மீகம்', 'வரலாறு', 'காப்பகம்', 'சுயாதீன ஆய்வு', 'விநாயகர்', 'பைபிள்', 'சைவம்', 'ஆண்டவர்கள்', 'சமரச வேதம்', 'தெய்வ நீதி', 'ஹதேஷ் குட்சி', 'ஆத்திசூடி', 'அன்று அன்று கிடைத்த அப்பம்', 'அரபு பாடங்களின் அர்த்தம்', 'இஸ்லாமிய படங்கள்']
 };
 
 export const INITIAL_LIBRARY: LibraryItem[] = [
@@ -353,6 +353,18 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
     filename: 'arabu_paadangalin_artham_part4.pdf',
     coverColor: 'bg-yellow-900',
     pdfUrl: 'https://drive.google.com/file/d/13iRvW6CPdJbSGZv4G-vxDYu4Msg5eoPk/view?usp=sharing'
+  },
+  {
+    id: '38',
+    title: 'இஸ்லாமிய படங்கள்',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
+    year: '—',
+    category: 'விளக்க உரை',
+    tags: ['ஆன்மீகம்', 'தமிழ்', 'இஸ்லாமிய படங்கள்'],
+    summary: 'இஸ்லாமிய படங்கள் ஆன்மீக நூல்; இஸ்லாமிய ஆன்மீக படங்கள் மற்றும் விளக்க உரைகளை உள்ளடக்கியது.',
+    filename: 'islamiyam_padangal.pdf',
+    coverColor: 'bg-teal-800',
+    pdfUrl: 'https://drive.google.com/file/d/14Z8NcTeijsTWjxfkKXT9YTRieEPFK1ow/view?usp=sharing'
   },
   {
     id: '7',
