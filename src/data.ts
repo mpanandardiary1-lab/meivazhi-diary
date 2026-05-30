@@ -2,7 +2,7 @@ import { LibraryItem } from './types';
 
 export const TAXONOMY = {
   categories: ['ரிக் வேதம்', 'யஜுர் வேதம்', 'சாம வேதம்', 'அதர்வ வேதம்', 'உபநிஷதங்கள்', 'விளக்க உரை'],
-  tags: ['சமஸ்கிருதம்', 'தமிழ்', 'தத்துவம்', 'மந்திரங்கள்', 'சடங்குகள்', 'ஆன்மீகம்', 'வரலாறு', 'காப்பகம்', 'சுயாதீன ஆய்வு', 'விநாயகர்', 'பைபிள்', 'சைவம்', 'ஆண்டவர்கள்', 'சமரச வேதம்', 'தெய்வ நீதி', 'ஹதேஷ் குட்சி', 'ஆத்திசூடி', 'அன்று அன்று கிடைத்த அப்பம்']
+  tags: ['சமஸ்கிருதம்', 'தமிழ்', 'தத்துவம்', 'மந்திரங்கள்', 'சடங்குகள்', 'ஆன்மீகம்', 'வரலாறு', 'காப்பகம்', 'சுயாதீன ஆய்வு', 'விநாயகர்', 'பைபிள்', 'சைவம்', 'ஆண்டவர்கள்', 'சமரச வேதம்', 'தெய்வ நீதி', 'ஹதேஷ் குட்சி', 'ஆத்திசூடி', 'அன்று அன்று கிடைத்த அப்பம்', 'அரபு பாடங்களின் அர்த்தம்']
 };
 
 export const INITIAL_LIBRARY: LibraryItem[] = [
@@ -305,6 +305,54 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
     filename: 'anru_anru_kidaitha_appam_part2.pdf',
     coverColor: 'bg-amber-700',
     pdfUrl: 'https://drive.google.com/file/d/13TvFB9SG_b-7qTLn0ep4Qcnhlvk-37u5/view?usp=sharing'
+  },
+  {
+    id: '34',
+    title: 'அரபு பாடங்களின் அர்த்தம் - பாகம் 1',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
+    year: '—',
+    category: 'விளக்க உரை',
+    tags: ['ஆன்மீகம்', 'தமிழ்', 'அரபு பாடங்களின் அர்த்தம்'],
+    summary: 'அரபு பாடங்களின் அர்த்தம் ஆன்மீக நூலின் முதல் பாகம்; அரபு பாடங்களின் பொருள் விளக்கம் மற்றும் ஆன்மீக உபதேசங்களை உள்ளடக்கியது.',
+    filename: 'arabu_paadangalin_artham_part1.pdf',
+    coverColor: 'bg-red-900',
+    pdfUrl: 'https://drive.google.com/file/d/13WiET0N4SiRJuV_Y6B9fdz659tMn79gs/view?usp=sharing'
+  },
+  {
+    id: '35',
+    title: 'அரபு பாடங்களின் அர்த்தம் - பாகம் 2',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
+    year: '—',
+    category: 'விளக்க உரை',
+    tags: ['ஆன்மீகம்', 'தமிழ்', 'அரபு பாடங்களின் அர்த்தம்'],
+    summary: 'அரபு பாடங்களின் அர்த்தம் ஆன்மீக நூலின் இரண்டாம் பாகம்; தொடர்ச்சியான அரபு பாட விளக்கங்கள் மற்றும் உபதேசங்களை வழங்குகிறது.',
+    filename: 'arabu_paadangalin_artham_part2.pdf',
+    coverColor: 'bg-orange-900',
+    pdfUrl: 'https://drive.google.com/file/d/13a4Dc9oABHQnQLbKHdthCX5i_aqk2cKP/view?usp=sharing'
+  },
+  {
+    id: '36',
+    title: 'அரபு பாடங்களின் அர்த்தம் - பாகம் 3',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
+    year: '—',
+    category: 'விளக்க உரை',
+    tags: ['ஆன்மீகம்', 'தமிழ்', 'அரபு பாடங்களின் அர்த்தம்'],
+    summary: 'அரபு பாடங்களின் அர்த்தம் ஆன்மீக நூலின் மூன்றாம் பாகம்; ஆழமான அரபு பாட விளக்கங்கள் மற்றும் ஆன்மீக உபதேசங்களை உள்ளடக்கியது.',
+    filename: 'arabu_paadangalin_artham_part3.pdf',
+    coverColor: 'bg-amber-900',
+    pdfUrl: 'https://drive.google.com/file/d/13hEbL2O8UuLdFJ7YLTK_KlKMR84cxXyD/view?usp=sharing'
+  },
+  {
+    id: '37',
+    title: 'அரபு பாடங்களின் அர்த்தம் - பாகம் 4',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
+    year: '—',
+    category: 'விளக்க உரை',
+    tags: ['ஆன்மீகம்', 'தமிழ்', 'அரபு பாடங்களின் அர்த்தம்'],
+    summary: 'அரபு பாடங்களின் அர்த்தம் ஆன்மீக நூலின் நான்காம் பாகம்; தொடர் நூலின் இறுதிப் பகுதி; அரபு பாட விளக்கங்களை நிறைவு செய்கிறது.',
+    filename: 'arabu_paadangalin_artham_part4.pdf',
+    coverColor: 'bg-yellow-900',
+    pdfUrl: 'https://drive.google.com/file/d/13iRvW6CPdJbSGZv4G-vxDYu4Msg5eoPk/view?usp=sharing'
   },
   {
     id: '7',
