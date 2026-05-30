@@ -4,6 +4,10 @@ import { Home } from './pages/Home';
 import { Library } from './pages/Library';
 import { AboutUs } from './pages/AboutUs';
 import { ContactUs } from './pages/ContactUs';
+import { TermsOfUse } from './pages/TermsOfUse';
+import { PrivacyPolicy } from './pages/PrivacyPolicy';
+import { Disclaimer } from './pages/Disclaimer';
+import { Copyright } from './pages/Copyright';
 import { Menu, X, Sparkles } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { SiteLogo } from './components/SiteLogo';
@@ -120,6 +124,10 @@ function AnimatedRoutes() {
           <Route path="/library" element={<Library />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/contact" element={<ContactUs />} />
+          <Route path="/terms" element={<TermsOfUse />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/disclaimer" element={<Disclaimer />} />
+          <Route path="/copyright" element={<Copyright />} />
         </Routes>
       </motion.div>
     </AnimatePresence>
@@ -159,9 +167,14 @@ function Footer() {
             <div className="space-y-4">
               <h3 className="text-sm font-bold text-slate-900 uppercase tracking-widest">சட்டம்</h3>
               <nav className="flex flex-col gap-2 text-sm text-slate-500">
-                <span className="cursor-help hover:text-slate-900 transition-colors" title="இது ஒரு தனிப்பட்ட கல்வி திட்டம்.">பொறுப்புத் துறப்பு</span>
-                <span className="cursor-help hover:text-slate-900 transition-colors" title="அனைத்து உள்ளடக்கமும் தகவல் மற்றும் ஆய்வு நோக்கங்களுக்காக மட்டுமே வழங்கப்படுகிறது.">பயன்பாட்டு விதிமுறைகள்</span>
+                <Link to="/terms" className="hover:text-slate-900 transition-colors">பயன்பாட்டு விதிமுறைகள்</Link>
+                <Link to="/privacy" className="hover:text-slate-900 transition-colors">தனியுரிமைக் கொள்கை</Link>
+                <Link to="/disclaimer" className="hover:text-slate-900 transition-colors">பொறுப்புத் துறப்பு</Link>
+                <Link to="/copyright" className="hover:text-slate-900 transition-colors">பதிப்புரிமை</Link>
               </nav>
+              <p className="text-[11px] text-amber-700/90 font-semibold leading-relaxed pt-1">
+                இலவசம் — தனிப்பட்ட ஆன்மீக படிப்புக்கு மட்டும்
+              </p>
             </div>
           </div>
         </div>
@@ -170,8 +183,8 @@ function Footer() {
           <p className="text-[11px] text-slate-400 font-medium text-center md:text-left max-w-2xl leading-relaxed">
             <strong>சுயாதீன கல்வி காப்பகம்:</strong> இந்த களஞ்சியம் ஆய்வு நோக்கங்களுக்காக மட்டுமே. எந்த அமைப்புடனும் இணைப்பில்லை. அனைத்து பொருட்களும் அறிவுசார் ஆய்வுக்காக "உள்ளபடியே" வழங்கப்படுகின்றன. உள்ளடக்கத்திற்கு உருவாக்குனர்கள் பொறுப்பேற்க மாட்டார்கள். பதிப்புரிமை அல்லது புகார் விசாரணைகளுக்கு எங்களைத் தொடர்பு கொள்ளவும்.
           </p>
-          <p className="text-xs text-slate-500 font-medium whitespace-nowrap">
-            © {new Date().getFullYear()} மெய்வழி புருஷோத்தம அனந்நர் காப்பகம்.
+          <p className="text-xs text-slate-500 font-medium text-center md:text-right leading-relaxed">
+            © {new Date().getFullYear()} மெய்வழி புருஷோத்தம அனந்நர் / காப்பக இயக்குநர்
           </p>
         </div>
       </div>
