@@ -5,6 +5,7 @@ import { LibraryItem } from '../types';
 import { LibraryCard } from '../components/LibraryCard';
 import { LibraryTable } from '../components/LibraryTable';
 import { PdfViewerModal } from '../components/PdfViewerModal';
+import { extractGoogleDriveFileId } from '../utils/drive';
 import { extractMetadataFromFilename } from '../services/gemini';
 import { 
   Search, 
@@ -67,15 +68,19 @@ export function Library() {
   const [activeTab, setActiveTab] = useState<'explore' | 'ai-assistant'>('explore');
 
   // PDF Viewer state
-  const [pdfViewerState, setPdfViewerState] = useState<{ isOpen: boolean; url: string; title: string }>({
+  const [pdfViewerState, setPdfViewerState] = useState<{
+    isOpen: boolean;
+    driveFileId?: string;
+    pdfUrl?: string;
+    title: string;
+  }>({
     isOpen: false,
-    url: '',
     title: ''
   });
 
   // AI Assistant form states
   const [rawFilename, setRawFilename] = useState('');
-  const [pdfUrlInput, setPdfUrlInput] = useState('');
+  const [driveFileIdInput, setDriveFileIdInput] = useState('');
   const [isAiLoading, setIsAiLoading] = useState(false);
   const [aiResult, setAiResult] = useState<any | null>(null);
   const [isUsingSimulatedAi, setIsUsingSimulatedAi] = useState(false);
@@ -103,10 +108,11 @@ export function Library() {
 
     if (readId) {
       const foundItem = library.find(item => item.id === readId);
-      if (foundItem && foundItem.pdfUrl) {
+      if (foundItem && (foundItem.driveFileId || foundItem.pdfUrl)) {
         setPdfViewerState({
           isOpen: true,
-          url: foundItem.pdfUrl,
+          driveFileId: foundItem.driveFileId,
+          pdfUrl: foundItem.pdfUrl,
           title: foundItem.title
         });
       }
@@ -133,8 +139,13 @@ export function Library() {
     }
   }, [searchParams, library, setSearchParams]);
 
-  const handleReadPdf = (url: string, title: string) => {
-    setPdfViewerState({ isOpen: true, url, title });
+  const handleReadPdf = (item: LibraryItem) => {
+    setPdfViewerState({
+      isOpen: true,
+      driveFileId: item.driveFileId,
+      pdfUrl: item.pdfUrl,
+      title: item.title
+    });
   };
 
   const filteredLibrary = useMemo(() => {
@@ -198,6 +209,10 @@ export function Library() {
     const coverColors = ['bg-indigo-800', 'bg-amber-800', 'bg-rose-800', 'bg-emerald-800', 'bg-teal-800', 'bg-purple-800', 'bg-orange-850'];
     const randomColor = coverColors[Math.floor(Math.random() * coverColors.length)];
 
+    const extractedDriveId = driveFileIdInput.trim()
+      ? extractGoogleDriveFileId(driveFileIdInput.trim())
+      : null;
+
     const newItem: LibraryItem = {
       id: (library.length + 1).toString(),
       title: editedItem.title,
@@ -208,14 +223,16 @@ export function Library() {
       summary: editedItem.summary,
       filename: editedItem.suggestedFilename || 'document.pdf',
       coverColor: randomColor,
-      pdfUrl: pdfUrlInput.trim() || 'https://raw.githubusercontent.com/mozilla/pdf.js/ba2edeae/web/compressed.tracemonkey-pldi-09.pdf'
+      ...(extractedDriveId
+        ? { driveFileId: extractedDriveId }
+        : { pdfUrl: 'https://raw.githubusercontent.com/mozilla/pdf.js/ba2edeae/web/compressed.tracemonkey-pldi-09.pdf' })
     };
 
     setLibrary(prev => [newItem, ...prev]);
     setNotification({ message: `"${newItem.title}" காப்பகத்தில் வெற்றிகரமாக சேர்க்கப்பட்டது.`, type: 'success' });
     // Reset assistant form
     setRawFilename('');
-    setPdfUrlInput('');
+    setDriveFileIdInput('');
     setAiResult(null);
     setIsUsingSimulatedAi(false);
     // Switch to explore catalog
@@ -549,15 +566,15 @@ export function Library() {
                   />
                 </div>
                 <div className="space-y-3">
-                  <label htmlFor="pdfUrlInput" className="block text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] ml-2">
-                    மூல URL / கிளவுட் இணைப்பு
+                  <label htmlFor="driveFileIdInput" className="block text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] ml-2">
+                    Drive கோப்பு ID (விருப்பம்)
                   </label>
                   <input
-                    type="url"
-                    id="pdfUrlInput"
-                    value={pdfUrlInput}
-                    onChange={(e) => setPdfUrlInput(e.target.value)}
-                    placeholder="https://drive.google.com/..."
+                    type="text"
+                    id="driveFileIdInput"
+                    value={driveFileIdInput}
+                    onChange={(e) => setDriveFileIdInput(e.target.value)}
+                    placeholder="கோப்பு ID அல்லது Drive இணைப்பு"
                     className="w-full px-6 py-4 glass-morphism rounded-2xl text-slate-950 placeholder-slate-400 focus:outline-none focus:ring-4 focus:ring-slate-900/5 shadow-inner"
                   />
                 </div>
@@ -692,7 +709,8 @@ export function Library() {
       <PdfViewerModal
         isOpen={pdfViewerState.isOpen}
         onClose={() => setPdfViewerState(prev => ({ ...prev, isOpen: false }))}
-        pdfUrl={pdfViewerState.url}
+        driveFileId={pdfViewerState.driveFileId}
+        pdfUrl={pdfViewerState.pdfUrl}
         title={pdfViewerState.title}
       />
     </div>

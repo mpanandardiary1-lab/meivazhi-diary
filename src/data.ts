@@ -16,7 +16,7 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
     summary: 'விகட விநாயகர் ஆன்மீக நூலின் முதல் பாகம்; பக்தி, தியானம் மற்றும் ஆன்மீக உபதேசங்களை உள்ளடக்கியது.',
     filename: 'vikada_vinayagar_part1.pdf',
     coverColor: 'bg-red-800',
-    pdfUrl: 'https://drive.google.com/file/d/1qf_f1Hrhmjj24xKOqQSAOCW4iQz8Q3Y8/view?usp=sharing'
+    driveFileId: '1qf_f1Hrhmjj24xKOqQSAOCW4iQz8Q3Y8'
   },
   {
     id: '10',
@@ -28,7 +28,7 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
     summary: 'விகட விநாயகர் ஆன்மீக நூலின் இரண்டாம் பாகம்; தொடர்ச்சியான ஆன்மீக பாடல்கள் மற்றும் உபதேசங்களை வழங்குகிறது.',
     filename: 'vikada_vinayagar_part2.pdf',
     coverColor: 'bg-orange-800',
-    pdfUrl: 'https://drive.google.com/file/d/1rsCpdgQ6SRnjxgwGteJYuK3c7RxDW-wp/view?usp=sharing'
+    driveFileId: '1rsCpdgQ6SRnjxgwGteJYuK3c7RxDW-wp'
   },
   {
     id: '11',
@@ -40,7 +40,7 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
     summary: 'விகட விநாயகர் ஆன்மீக நூலின் மூன்றாம் பாகம்; ஆழமான தத்துவ சிந்தனைகள் மற்றும் பக்தி உபதேசங்களை உள்ளடக்கியது.',
     filename: 'vikada_vinayagar_part3.pdf',
     coverColor: 'bg-amber-800',
-    pdfUrl: 'https://drive.google.com/file/d/1s3WLcAcMfK7MP4w_XAygw9LfXOU_2Lfg/view?usp=sharing'
+    driveFileId: '1s3WLcAcMfK7MP4w_XAygw9LfXOU_2Lfg'
   },
   {
     id: '12',
@@ -52,7 +52,7 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
     summary: 'விகட விநாயகர் ஆன்மீக நூலின் நான்காம் பாகம்; தொடர் நூலின் இறுதிப் பகுதி; ஆன்மீக உணர்வுகள் மற்றும் உபதேசங்களை நிறைவு செய்கிறது.',
     filename: 'vikada_vinayagar_part4.pdf',
     coverColor: 'bg-yellow-800',
-    pdfUrl: 'https://drive.google.com/file/d/1s6C5ZtedSVwx3jVSTAahepSMchDj_jfG/view?usp=sharing'
+    driveFileId: '1s6C5ZtedSVwx3jVSTAahepSMchDj_jfG'
   },
   {
     id: '13',
@@ -64,7 +64,7 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
     summary: 'பைபிள், சோராஸ்திரியம் மற்றும் சைவ தத்துவம் பற்றிய ஆன்மீக நூலின் முதல் பாகம்.',
     filename: 'bible_sorastriyam_saivam_part1.pdf',
     coverColor: 'bg-blue-900',
-    pdfUrl: 'https://drive.google.com/file/d/1sRcSUJwC6AFbSmKc740IPY8Ko1TpAv0y/view?usp=sharing'
+    driveFileId: '1sRcSUJwC6AFbSmKc740IPY8Ko1TpAv0y'
   },
   {
     id: '14',
@@ -76,7 +76,7 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
     summary: 'பைபிள், சோராஸ்திரியம் மற்றும் சைவ தத்துவம் பற்றிய ஆன்மீக நூலின் இரண்டாம் பாகம்.',
     filename: 'bible_sorastriyam_saivam_part2.pdf',
     coverColor: 'bg-indigo-900',
-    pdfUrl: 'https://drive.google.com/file/d/1tMxvTY0M69L7CIhpFxAAuuxahYmyY5Mx/view?usp=sharing'
+    driveFileId: '1tMxvTY0M69L7CIhpFxAAuuxahYmyY5Mx'
   },
   {
     id: '15',
@@ -88,7 +88,7 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
     summary: 'பைபிள், சோராஸ்திரியம் மற்றும் சைவ தத்துவம் பற்றிய ஆன்மீக நூலின் மூன்றாம் பாகம்.',
     filename: 'bible_sorastriyam_saivam_part3.pdf',
     coverColor: 'bg-violet-900',
-    pdfUrl: 'https://drive.google.com/file/d/1tT59mJKu7RwaCgSdr8t1gk7gqteCS5pY/view?usp=sharing'
+    driveFileId: '1tT59mJKu7RwaCgSdr8t1gk7gqteCS5pY'
   },
   {
     id: '16',
@@ -100,7 +100,7 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
     summary: 'ஆண்டவர்களின் வாக்கியம் ஆன்மீக நூலின் முதல் பாகம்; புனித உபதேசங்கள் மற்றும் ஆன்மீக வாக்கியங்களை உள்ளடக்கியது.',
     filename: 'aandavarkalin_vaakiyam_part1.pdf',
     coverColor: 'bg-stone-800',
-    pdfUrl: 'https://drive.google.com/file/d/1tWH7gutDrUgv1L3cIQeN8RVi3FgJiaM5/view?usp=sharing'
+    driveFileId: '1tWH7gutDrUgv1L3cIQeN8RVi3FgJiaM5'
   },
   {
     id: '17',
@@ -112,7 +112,7 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
     summary: 'ஆண்டவர்களின் வாக்கியம் ஆன்மீக நூலின் இரண்டாம் பாகம்; தொடர்ச்சியான ஆன்மீக வாக்கியங்கள் மற்றும் உபதேசங்களை வழங்குகிறது.',
     filename: 'aandavarkalin_vaakiyam_part2.pdf',
     coverColor: 'bg-zinc-800',
-    pdfUrl: 'https://drive.google.com/file/d/1t_zoZqhONElyqbXW4qu8t4Fxg3pZWmCp/view?usp=sharing'
+    driveFileId: '1t_zoZqhONElyqbXW4qu8t4Fxg3pZWmCp'
   },
   {
     id: '18',
@@ -124,7 +124,7 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
     summary: 'ஆண்டவர்களின் வாக்கியம் ஆன்மீக நூலின் மூன்றாம் பாகம்; ஆழமான தத்துவ வாக்கியங்கள் மற்றும் பக்தி உபதேசங்களை உள்ளடக்கியது.',
     filename: 'aandavarkalin_vaakiyam_part3.pdf',
     coverColor: 'bg-neutral-800',
-    pdfUrl: 'https://drive.google.com/file/d/1tgm0BeCgjdN4Q-lX6Qam7iIYQIeFE5PM/view?usp=sharing'
+    driveFileId: '1tgm0BeCgjdN4Q-lX6Qam7iIYQIeFE5PM'
   },
   {
     id: '19',
@@ -136,7 +136,7 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
     summary: 'ஆண்டவர்களின் வாக்கியம் ஆன்மீக நூலின் நான்காம் பாகம்; தொடர் நூலின் இறுதிப் பகுதி; ஆன்மீக வாக்கியங்களை நிறைவு செய்கிறது.',
     filename: 'aandavarkalin_vaakiyam_part4.pdf',
     coverColor: 'bg-slate-800',
-    pdfUrl: 'https://drive.google.com/file/d/1trmVekqwL-nP7qzpPxEJ0txOn59B3tk4/view?usp=sharing'
+    driveFileId: '1trmVekqwL-nP7qzpPxEJ0txOn59B3tk4'
   },
   {
     id: '20',
@@ -148,7 +148,7 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
     summary: 'சமரச வேத எண்ணம் ஆன்மீக நூலின் முதல் பாகம்; சமரச வேத தத்துவம் மற்றும் ஆன்மீக சிந்தனைகளை உள்ளடக்கியது.',
     filename: 'samarasa_vetha_ennam_part1.pdf',
     coverColor: 'bg-cyan-900',
-    pdfUrl: 'https://drive.google.com/file/d/1-1wQ_X1hAE-ZRDzvYAYkcJeoGzFMxv7L/view?usp=sharing'
+    driveFileId: '1-1wQ_X1hAE-ZRDzvYAYkcJeoGzFMxv7L'
   },
   {
     id: '21',
@@ -160,7 +160,7 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
     summary: 'சமரச வேத எண்ணம் ஆன்மீக நூலின் இரண்டாம் பாகம்; தொடர்ச்சியான வேத சிந்தனைகள் மற்றும் உபதேசங்களை வழங்குகிறது.',
     filename: 'samarasa_vetha_ennam_part2.pdf',
     coverColor: 'bg-sky-900',
-    pdfUrl: 'https://drive.google.com/file/d/1-eyR4xDs_RIrY8oZ2BxoKaCkoj74xQ0J/view?usp=sharing'
+    driveFileId: '1-eyR4xDs_RIrY8oZ2BxoKaCkoj74xQ0J'
   },
   {
     id: '22',
@@ -172,7 +172,7 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
     summary: 'சமரச வேத எண்ணம் ஆன்மீக நூலின் மூன்றாம் பாகம்; ஆழமான தத்துவ எண்ணங்கள் மற்றும் ஆன்மீக உபதேசங்களை உள்ளடக்கியது.',
     filename: 'samarasa_vetha_ennam_part3.pdf',
     coverColor: 'bg-teal-900',
-    pdfUrl: 'https://drive.google.com/file/d/1-heXTeIVFmY0yjDtRLyjs2GkxDtvjGZj/view?usp=sharing'
+    driveFileId: '1-heXTeIVFmY0yjDtRLyjs2GkxDtvjGZj'
   },
   {
     id: '23',
@@ -184,7 +184,7 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
     summary: 'சமரச வேத எண்ணம் ஆன்மீக நூலின் நான்காம் பாகம்; தொடர் நூலின் இறுதிப் பகுதி; சமரச வேத எண்ணங்களை நிறைவு செய்கிறது.',
     filename: 'samarasa_vetha_ennam_part4.pdf',
     coverColor: 'bg-emerald-900',
-    pdfUrl: 'https://drive.google.com/file/d/1-iUQUa8FihEg8cmXQdOIM9SL9UqhsWFg/view?usp=sharing'
+    driveFileId: '1-iUQUa8FihEg8cmXQdOIM9SL9UqhsWFg'
   },
   {
     id: '24',
@@ -196,7 +196,7 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
     summary: 'தெய்வ நீதி ஆன்மீக நூலின் முதல் பாகம்; தெய்வீக நீதி மற்றும் ஆன்மீக உபதேசங்களை உள்ளடக்கியது.',
     filename: 'theiva_neethi_part1.pdf',
     coverColor: 'bg-rose-900',
-    pdfUrl: 'https://drive.google.com/file/d/1-r9LYfgy5MMtzGYyLD8NbSjpI01zQsCa/view?usp=sharing'
+    driveFileId: '1-r9LYfgy5MMtzGYyLD8NbSjpI01zQsCa'
   },
   {
     id: '25',
@@ -208,7 +208,7 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
     summary: 'தெய்வ நீதி ஆன்மீக நூலின் இரண்டாம் பாகம்; தொடர்ச்சியான தெய்வீக நீதி உபதேசங்களை வழங்குகிறது.',
     filename: 'theiva_neethi_part2.pdf',
     coverColor: 'bg-pink-900',
-    pdfUrl: 'https://drive.google.com/file/d/10ArWIw9ZMFfkdmnBb-mTLnTlWqbU6hKf/view?usp=sharing'
+    driveFileId: '10ArWIw9ZMFfkdmnBb-mTLnTlWqbU6hKf'
   },
   {
     id: '26',
@@ -220,7 +220,7 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
     summary: 'தெய்வ நீதி ஆன்மீக நூலின் மூன்றாம் பாகம்; ஆழமான தெய்வீக நீதி சிந்தனைகள் மற்றும் உபதேசங்களை உள்ளடக்கியது.',
     filename: 'theiva_neethi_part3.pdf',
     coverColor: 'bg-fuchsia-900',
-    pdfUrl: 'https://drive.google.com/file/d/10BmoTQGcuuv0qexVz-Pf0f7LWCIlefXJ/view?usp=sharing'
+    driveFileId: '10BmoTQGcuuv0qexVz-Pf0f7LWCIlefXJ'
   },
   {
     id: '27',
@@ -232,7 +232,7 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
     summary: 'தெய்வ நீதி ஆன்மீக நூலின் நான்காம் பாகம்; தொடர் நூலின் இறுதிப் பகுதி; தெய்வீக நீதி உபதேசங்களை நிறைவு செய்கிறது.',
     filename: 'theiva_neethi_part4.pdf',
     coverColor: 'bg-purple-900',
-    pdfUrl: 'https://drive.google.com/file/d/10EA7Do6kdilsUqhikeOBH8unBi-TmYaz/view?usp=sharing'
+    driveFileId: '10EA7Do6kdilsUqhikeOBH8unBi-TmYaz'
   },
   {
     id: '28',
@@ -244,7 +244,7 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
     summary: 'ஹதீஸ் குத்ஸி ஆன்மீக நூல்; ஆன்மீக உபதேசங்கள் மற்றும் தத்துவ சிந்தனைகளை உள்ளடக்கியது.',
     filename: 'hadees_kutsi.pdf',
     coverColor: 'bg-lime-900',
-    pdfUrl: 'https://drive.google.com/file/d/10FFKBpUFoSaeF-TdZNBjNrWkgfJ-0ZgY/view?usp=sharing'
+    driveFileId: '10FFKBpUFoSaeF-TdZNBjNrWkgfJ-0ZgY'
   },
   {
     id: '29',
@@ -256,7 +256,7 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
     summary: 'ஆத்திசூடி ஆன்மீக நூலின் முதல் பாகம்; ஆன்மீக உபதேசங்கள் மற்றும் தத்துவ சிந்தனைகளை உள்ளடக்கியது.',
     filename: 'aathisudi_part1.pdf',
     coverColor: 'bg-green-900',
-    pdfUrl: 'https://drive.google.com/file/d/11n65F-aGZF0FY9RtDWxPvT3Fu1c_mWXV/view?usp=sharing'
+    driveFileId: '11n65F-aGZF0FY9RtDWxPvT3Fu1c_mWXV'
   },
   {
     id: '30',
@@ -268,7 +268,7 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
     summary: 'ஆத்திசூடி ஆன்மீக நூலின் இரண்டாம் பாகம்; தொடர்ச்சியான ஆன்மீக உபதேசங்கள் மற்றும் தத்துவ சிந்தனைகளை வழங்குகிறது.',
     filename: 'aathisudi_part2.pdf',
     coverColor: 'bg-green-800',
-    pdfUrl: 'https://drive.google.com/file/d/11n6KNdohqbC6WGPNKsAZW4ezo1-En6We/view?usp=sharing'
+    driveFileId: '11n6KNdohqbC6WGPNKsAZW4ezo1-En6We'
   },
   {
     id: '31',
@@ -280,7 +280,7 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
     summary: 'ஆத்திசூடி ஆன்மீக நூலின் மூன்றாம் பாகம்; ஆழமான தத்துவ சிந்தனைகள் மற்றும் ஆன்மீக உபதேசங்களை உள்ளடக்கியது.',
     filename: 'aathisudi_part3.pdf',
     coverColor: 'bg-emerald-800',
-    pdfUrl: 'https://drive.google.com/file/d/11oKBcmAg5mlQZy-Zt5GbCoqKvxL-3eEJ/view?usp=sharing'
+    driveFileId: '11oKBcmAg5mlQZy-Zt5GbCoqKvxL-3eEJ'
   },
   {
     id: '32',
@@ -292,7 +292,7 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
     summary: 'அன்று அன்று கிடைத்த அப்பம் ஆன்மீக நூலின் முதல் பாகம்; ஆன்மீக உபதேசங்கள் மற்றும் தத்துவ சிந்தனைகளை உள்ளடக்கியது.',
     filename: 'anru_anru_kidaitha_appam_part1.pdf',
     coverColor: 'bg-orange-700',
-    pdfUrl: 'https://drive.google.com/file/d/13TEHQq4WjsRARjyh00pSntoq2f17J8xZ/view?usp=sharing'
+    driveFileId: '13TEHQq4WjsRARjyh00pSntoq2f17J8xZ'
   },
   {
     id: '33',
@@ -304,7 +304,7 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
     summary: 'அன்று அன்று கிடைத்த அப்பம் ஆன்மீக நூலின் இரண்டாம் பாகம்; தொடர்ச்சியான ஆன்மீக உபதேசங்கள் மற்றும் தத்துவ சிந்தனைகளை வழங்குகிறது.',
     filename: 'anru_anru_kidaitha_appam_part2.pdf',
     coverColor: 'bg-amber-700',
-    pdfUrl: 'https://drive.google.com/file/d/13TvFB9SG_b-7qTLn0ep4Qcnhlvk-37u5/view?usp=sharing'
+    driveFileId: '13TvFB9SG_b-7qTLn0ep4Qcnhlvk-37u5'
   },
   {
     id: '34',
@@ -316,7 +316,7 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
     summary: 'அரபு பாடங்களின் அர்த்தம் ஆன்மீக நூலின் முதல் பாகம்; அரபு பாடங்களின் பொருள் விளக்கம் மற்றும் ஆன்மீக உபதேசங்களை உள்ளடக்கியது.',
     filename: 'arabu_paadangalin_artham_part1.pdf',
     coverColor: 'bg-red-900',
-    pdfUrl: 'https://drive.google.com/file/d/13WiET0N4SiRJuV_Y6B9fdz659tMn79gs/view?usp=sharing'
+    driveFileId: '13WiET0N4SiRJuV_Y6B9fdz659tMn79gs'
   },
   {
     id: '35',
@@ -328,7 +328,7 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
     summary: 'அரபு பாடங்களின் அர்த்தம் ஆன்மீக நூலின் இரண்டாம் பாகம்; தொடர்ச்சியான அரபு பாட விளக்கங்கள் மற்றும் உபதேசங்களை வழங்குகிறது.',
     filename: 'arabu_paadangalin_artham_part2.pdf',
     coverColor: 'bg-orange-900',
-    pdfUrl: 'https://drive.google.com/file/d/13a4Dc9oABHQnQLbKHdthCX5i_aqk2cKP/view?usp=sharing'
+    driveFileId: '13a4Dc9oABHQnQLbKHdthCX5i_aqk2cKP'
   },
   {
     id: '36',
@@ -340,7 +340,7 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
     summary: 'அரபு பாடங்களின் அர்த்தம் ஆன்மீக நூலின் மூன்றாம் பாகம்; ஆழமான அரபு பாட விளக்கங்கள் மற்றும் ஆன்மீக உபதேசங்களை உள்ளடக்கியது.',
     filename: 'arabu_paadangalin_artham_part3.pdf',
     coverColor: 'bg-amber-900',
-    pdfUrl: 'https://drive.google.com/file/d/13hEbL2O8UuLdFJ7YLTK_KlKMR84cxXyD/view?usp=sharing'
+    driveFileId: '13hEbL2O8UuLdFJ7YLTK_KlKMR84cxXyD'
   },
   {
     id: '37',
@@ -352,7 +352,7 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
     summary: 'அரபு பாடங்களின் அர்த்தம் ஆன்மீக நூலின் நான்காம் பாகம்; தொடர் நூலின் இறுதிப் பகுதி; அரபு பாட விளக்கங்களை நிறைவு செய்கிறது.',
     filename: 'arabu_paadangalin_artham_part4.pdf',
     coverColor: 'bg-yellow-900',
-    pdfUrl: 'https://drive.google.com/file/d/13iRvW6CPdJbSGZv4G-vxDYu4Msg5eoPk/view?usp=sharing'
+    driveFileId: '13iRvW6CPdJbSGZv4G-vxDYu4Msg5eoPk'
   },
   {
     id: '38',
@@ -364,7 +364,7 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
     summary: 'இஸ்லாமிய படங்கள் ஆன்மீக நூல்; இஸ்லாமிய ஆன்மீக படங்கள் மற்றும் விளக்க உரைகளை உள்ளடக்கியது.',
     filename: 'islamiyam_padangal.pdf',
     coverColor: 'bg-teal-800',
-    pdfUrl: 'https://drive.google.com/file/d/14Z8NcTeijsTWjxfkKXT9YTRieEPFK1ow/view?usp=sharing'
+    driveFileId: '14Z8NcTeijsTWjxfkKXT9YTRieEPFK1ow'
   },
   {
     id: '39',
@@ -376,7 +376,7 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
     summary: 'கியாமத் மகஸர் பாதை ஆன்மீக நூலின் முதல் பாகம்; ஆன்மீக உபதேசங்கள் மற்றும் தத்துவ சிந்தனைகளை உள்ளடக்கியது.',
     filename: 'kiyaamath_makasar_paathai_part1.pdf',
     coverColor: 'bg-indigo-700',
-    pdfUrl: 'https://drive.google.com/file/d/14ZFWXOyW2NiQthYjSeq3xsFmeGT_rT8e/view?usp=sharing'
+    driveFileId: '14ZFWXOyW2NiQthYjSeq3xsFmeGT_rT8e'
   },
   {
     id: '40',
@@ -388,7 +388,7 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
     summary: 'கியாமத் மகஸர் பாதை ஆன்மீக நூலின் இரண்டாம் பாகம்; தொடர்ச்சியான ஆன்மீக உபதேசங்கள் மற்றும் தத்துவ சிந்தனைகளை வழங்குகிறது.',
     filename: 'kiyaamath_makasar_paathai_part2.pdf',
     coverColor: 'bg-blue-700',
-    pdfUrl: 'https://drive.google.com/file/d/14Zi0YbnOBtpf-OV7LQMAEDxsLKOojmZG/view?usp=sharing'
+    driveFileId: '14Zi0YbnOBtpf-OV7LQMAEDxsLKOojmZG'
   },
   {
     id: '41',
@@ -400,7 +400,7 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
     summary: 'கியாமத் மகஸர் பாதை ஆன்மீக நூலின் மூன்றாம் பாகம்; ஆழமான தத்துவ சிந்தனைகள் மற்றும் ஆன்மீக உபதேசங்களை உள்ளடக்கியது.',
     filename: 'kiyaamath_makasar_paathai_part3.pdf',
     coverColor: 'bg-cyan-700',
-    pdfUrl: 'https://drive.google.com/file/d/14cRE703A3uecuunv8Zm-pfvaluWv86iD/view?usp=sharing'
+    driveFileId: '14cRE703A3uecuunv8Zm-pfvaluWv86iD'
   },
   {
     id: '42',
@@ -412,7 +412,7 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
     summary: 'கியாமத் மகஸர் பாதை ஆன்மீக நூலின் நான்காம் பாகம்; தொடர் நூலின் இறுதிப் பகுதி; ஆன்மீக உபதேசங்களை நிறைவு செய்கிறது.',
     filename: 'kiyaamath_makasar_paathai_part4.pdf',
     coverColor: 'bg-sky-700',
-    pdfUrl: 'https://drive.google.com/file/d/14hQIZl7ckyCLU_3f3puj6t7z9cTuHOoM/view?usp=sharing'
+    driveFileId: '14hQIZl7ckyCLU_3f3puj6t7z9cTuHOoM'
   },
   {
     id: '43',
@@ -424,6 +424,6 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
     summary: 'மஹரிபத் ஆன்மீக நூல்; ஆன்மீக உபதேசங்கள் மற்றும் தத்துவ சிந்தனைகளை உள்ளடக்கியது.',
     filename: 'maharibath.pdf',
     coverColor: 'bg-violet-800',
-    pdfUrl: 'https://drive.google.com/file/d/151d0qqi49aMLyNIyb9_JgRk11H1_bsD5/view?usp=sharing'
+    driveFileId: '151d0qqi49aMLyNIyb9_JgRk11H1_bsD5'
   }
 ];
