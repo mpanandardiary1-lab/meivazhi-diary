@@ -249,7 +249,7 @@ export function Library() {
 
       <Helmet>
         <title>டிஜிட்டல் நூலகம் - மெய்வழி புருஷோத்தம அனந்நர் ஆன்மீக நாட்குறிப்பு</title>
-        <meta name="description" content="ஆன்மீக பதிவுகள் மற்றும் வேத ஆய்வுகளின் விரிவான சுயாதீன காப்பகத்தை ஆராயுங்கள்; அறிவுசார் மற்றும் தனிப்பட்ட ஆய்வுக்காகப் பாதுகாக்கப்பட்டுள்ளது." />
+        <meta name="description" content="Digital library of Meivazhi Purushothama Ananar spiritual texts — ஆன்மீக பதிவுகள் மற்றும் வேத ஆய்வுகளின் விரிவான சுயாதீன காப்பகம்; அறிவுசார் ஆய்வுக்காக மட்டுமே." />
         <link rel="canonical" href="https://mpanandardiary.com/library" />
       </Helmet>
 

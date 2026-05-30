@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { useNavigate, Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { BookOpen, Sparkles, Compass, ArrowRight, Bookmark, Library as LibraryIcon, ShieldCheck } from 'lucide-react';
 import { INITIAL_LIBRARY } from '../data';
 
@@ -24,6 +25,14 @@ export function Home() {
 
   return (
     <div className="flex-grow flex flex-col w-full">
+      <Helmet>
+        <title>மெய்வழி புருஷோத்தம அனந்நர் ஆன்மீக நாட்குறிப்பு | Meivazhi Purushothama Ananar Spiritual Diary</title>
+        <meta
+          name="description"
+          content="Meivazhi Purushothama Ananar spiritual diary digital library — வரலாற்று ஆன்மீக நாட்குறிப்புகள், வேத ஆய்வுகள் மற்றும் புனித பதிவுகளின் சுயாதீன டிஜிட்டல் காப்பகம்."
+        />
+        <link rel="canonical" href="https://mpanandardiary.com/" />
+      </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden py-20 border-b border-gray-100 bg-white">
         {/* Animated Background Gradients */}
@@ -125,8 +134,8 @@ export function Home() {
                 transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
                 className="relative z-10 w-full h-full bg-white rounded-[3rem] border border-white/50 shadow-2xl overflow-hidden group p-8 flex flex-col justify-center items-center gap-8"
               >
-                <div className="w-32 h-32 bg-gradient-to-br from-amber-400 to-orange-600 rounded-3xl flex items-center justify-center text-white shadow-xl shadow-orange-500/30 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
-                  <BookOpen className="w-16 h-16" />
+                <div className="w-32 h-32 bg-gradient-to-br from-amber-400 to-orange-600 rounded-3xl flex items-center justify-center text-white shadow-xl shadow-orange-500/30 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500" role="img" aria-label="மெய்வழி புருஷோத்தம அனந்நர் ஆன்மீக நாட்குறிப்பு காப்பகம்">
+                  <BookOpen className="w-16 h-16" aria-hidden="true" />
                 </div>
                 <div className="text-center space-y-2">
                   <div className="text-2xl font-serif font-bold text-slate-900">தெய்வீக ஞான காப்பகம்</div>

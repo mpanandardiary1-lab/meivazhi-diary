@@ -4,8 +4,9 @@ import { Home } from './pages/Home';
 import { Library } from './pages/Library';
 import { AboutUs } from './pages/AboutUs';
 import { ContactUs } from './pages/ContactUs';
-import { BookOpen, Menu, X, Sparkles } from 'lucide-react';
+import { Menu, X, Sparkles } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import { SiteLogo } from './components/SiteLogo';
 
 function Navigation() {
   const location = useLocation();
@@ -28,14 +29,12 @@ function Navigation() {
           className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent w-full h-full skew-x-[-20deg]"
         />
 
-        <Link to="/" className="flex items-center gap-3 group relative z-10">
-          <div className="w-10 h-10 bg-slate-900 rounded-xl flex items-center justify-center text-white shadow-lg group-hover:scale-105 group-hover:rotate-3 transition-all duration-300">
-            <BookOpen className="w-5 h-5" />
-          </div>
-          <div>
-            <h1 className="text-lg font-serif font-bold text-slate-900 leading-none">புருஷோத்தம அனந்நர்</h1>
+        <Link to="/" className="flex items-center gap-3 group relative z-10" aria-label="மெய்வழி புருஷோத்தம அனந்நர் ஆன்மீக நாட்குறிப்பு முகப்பு">
+          <SiteLogo />
+          <div className="min-w-0">
+            <h1 className="text-sm sm:text-base font-serif font-bold text-slate-900 leading-tight">மெய்வழி புருஷோத்தம அனந்நர்</h1>
             <p className="text-[9px] text-amber-600 font-bold uppercase tracking-[0.2em] mt-1 flex items-center gap-1">
-              <Sparkles className="w-2.5 h-2.5" /> தெய்வீக காப்பகம்
+              <Sparkles className="w-2.5 h-2.5 shrink-0" aria-hidden="true" /> தெய்வீக காப்பகம்
             </p>
           </div>
         </Link>
@@ -134,10 +133,7 @@ function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-start gap-10 mb-10">
           <div className="space-y-4 max-w-xs">
             <div className="flex items-center gap-3 group">
-              <div className="w-10 h-10 bg-gradient-to-br from-orange-400 to-orange-600 rounded-xl flex items-center justify-center text-white shadow-md shadow-orange-500/20 group-hover:scale-105 group-hover:rotate-3 transition-all duration-300 relative overflow-hidden">
-                <div className="absolute inset-0 bg-white/20 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <BookOpen className="w-5 h-5 relative z-10" />
-              </div>
+              <SiteLogo />
               <div>
                 <h2 className="text-lg font-serif font-bold tracking-tight text-slate-900">மெய்வழி புருஷோத்தம அனந்நர் ஆன்மீக நாட்குறிப்பு</h2>
                 <p className="text-[10px] text-amber-600 font-semibold uppercase tracking-[0.2em] flex items-center gap-1">

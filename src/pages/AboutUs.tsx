@@ -8,7 +8,7 @@ export function AboutUs() {
     <div className="flex-1 max-w-5xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-12 flex flex-col gap-16 relative z-10 pt-24">
       <Helmet>
         <title>எங்கள் காப்பகம் பற்றி - மெய்வழி புருஷோத்தம அனந்நர் ஆன்மீக நாட்குறிப்பு</title>
-        <meta name="description" content="வரலாற்று ஆன்மீக நூல்கள் மற்றும் நாட்குறிப்புகளை ஆய்வு மற்றும் கல்வி நோக்கங்களுக்காகப் பாதுகாக்கும் எங்கள் சுயாதீன நோக்கத்தை அறியுங்கள்." />
+        <meta name="description" content="About the Meivazhi Purushothama Ananar spiritual diary archive — வரலாற்று ஆன்மீக நூல்கள் மற்றும் நாட்குறிப்புகளை ஆய்வு மற்றும் கல்வி நோக்கங்களுக்காகப் பாதுகாக்கும் சுயாதீன நோக்கம்." />
         <link rel="canonical" href="https://mpanandardiary.com/about" />
       </Helmet>
       

@@ -1,5 +1,13 @@
 {
   "name": "மெய்வழி புருஷோத்தம அனந்நர் ஆன்மீக நாட்குறிப்பு",
-  "description": "வரலாற்று ஆன்மீக பதிவுகள் மற்றும் நாட்குறிப்புகளைப் பார்வையிடவும் ஆய்வு செய்யவும் சுயாதீன டிஜிட்டல் துறை.",
+  "alternateName": "Meivazhi Purushothama Ananar Spiritual Diary Digital Library",
+  "description": "வரலாற்று ஆன்மீக பதிவுகள் மற்றும் நாட்குறிப்புகளைப் பார்வையிடவும் ஆய்வு செய்யவும் சுயாதீன டிஜிட்டல் காப்பகம். Independent Tamil spiritual diary archive for education and research.",
+  "language": "ta",
+  "keywords": [
+    "Meivazhi Purushothama Ananar",
+    "spiritual diary",
+    "Tamil archive",
+    "மெய்வழி புருஷோத்தம அனந்நர்"
+  ],
   "requestFramePermissions": []
 }
