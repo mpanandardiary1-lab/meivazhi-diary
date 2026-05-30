@@ -2,7 +2,7 @@ import { LibraryItem } from './types';
 
 export const TAXONOMY = {
   categories: ['ரிக் வேதம்', 'யஜுர் வேதம்', 'சாம வேதம்', 'அதர்வ வேதம்', 'உபநிஷதங்கள்', 'விளக்க உரை'],
-  tags: ['சமஸ்கிருதம்', 'தமிழ்', 'தத்துவம்', 'மந்திரங்கள்', 'சடங்குகள்', 'ஆன்மீகம்', 'வரலாறு', 'காப்பகம்', 'சுயாதீன ஆய்வு', 'விநாயகர்', 'பைபிள்', 'சைவம்', 'ஆண்டவர்கள்', 'சமரச வேதம்', 'தெய்வ நீதி']
+  tags: ['சமஸ்கிருதம்', 'தமிழ்', 'தத்துவம்', 'மந்திரங்கள்', 'சடங்குகள்', 'ஆன்மீகம்', 'வரலாறு', 'காப்பகம்', 'சுயாதீன ஆய்வு', 'விநாயகர்', 'பைபிள்', 'சைவம்', 'ஆண்டவர்கள்', 'சமரச வேதம்', 'தெய்வ நீதி', 'ஹதேஷ் குட்சி', 'ஆதிசூடி']
 };
 
 export const INITIAL_LIBRARY: LibraryItem[] = [
@@ -233,6 +233,54 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
     filename: 'theiva_neethi_part4.pdf',
     coverColor: 'bg-purple-900',
     pdfUrl: 'https://drive.google.com/file/d/10EA7Do6kdilsUqhikeOBH8unBi-TmYaz/view?usp=sharing'
+  },
+  {
+    id: '28',
+    title: 'ஹதேஷ் குட்சி',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
+    year: '—',
+    category: 'விளக்க உரை',
+    tags: ['ஆன்மீகம்', 'தமிழ்', 'ஹதேஷ் குட்சி'],
+    summary: 'ஹதேஷ் குட்சி ஆன்மீக நூல்; ஆன்மீக உபதேசங்கள் மற்றும் தத்துவ சிந்தனைகளை உள்ளடக்கியது.',
+    filename: 'hathesh_kutsi.pdf',
+    coverColor: 'bg-lime-900',
+    pdfUrl: 'https://drive.google.com/file/d/10FFKBpUFoSaeF-TdZNBjNrWkgfJ-0ZgY/view?usp=sharing'
+  },
+  {
+    id: '29',
+    title: 'ஆதிசூடி - பாகம் 1',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
+    year: '—',
+    category: 'விளக்க உரை',
+    tags: ['ஆன்மீகம்', 'தமிழ்', 'ஆதிசூடி'],
+    summary: 'ஆதிசூடி ஆன்மீக நூலின் முதல் பாகம்; ஆன்மீக உபதேசங்கள் மற்றும் தத்துவ சிந்தனைகளை உள்ளடக்கியது.',
+    filename: 'aathisudi_part1.pdf',
+    coverColor: 'bg-green-900',
+    pdfUrl: 'https://drive.google.com/file/d/11n65F-aGZF0FY9RtDWxPvT3Fu1c_mWXV/view?usp=sharing'
+  },
+  {
+    id: '30',
+    title: 'ஆதிசூடி - பாகம் 2',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
+    year: '—',
+    category: 'விளக்க உரை',
+    tags: ['ஆன்மீகம்', 'தமிழ்', 'ஆதிசூடி'],
+    summary: 'ஆதிசூடி ஆன்மீக நூலின் இரண்டாம் பாகம்; தொடர்ச்சியான ஆன்மீக உபதேசங்கள் மற்றும் தத்துவ சிந்தனைகளை வழங்குகிறது.',
+    filename: 'aathisudi_part2.pdf',
+    coverColor: 'bg-green-800',
+    pdfUrl: 'https://drive.google.com/file/d/11n6KNdohqbC6WGPNKsAZW4ezo1-En6We/view?usp=sharing'
+  },
+  {
+    id: '31',
+    title: 'ஆதிசூடி - பாகம் 3',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
+    year: '—',
+    category: 'விளக்க உரை',
+    tags: ['ஆன்மீகம்', 'தமிழ்', 'ஆதிசூடி'],
+    summary: 'ஆதிசூடி ஆன்மீக நூலின் மூன்றாம் பாகம்; ஆழமான தத்துவ சிந்தனைகள் மற்றும் ஆன்மீக உபதேசங்களை உள்ளடக்கியது.',
+    filename: 'aathisudi_part3.pdf',
+    coverColor: 'bg-emerald-800',
+    pdfUrl: 'https://drive.google.com/file/d/11oKBcmAg5mlQZy-Zt5GbCoqKvxL-3eEJ/view?usp=sharing'
   },
   {
     id: '7',
