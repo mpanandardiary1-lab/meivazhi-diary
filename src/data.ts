@@ -1,8 +1,8 @@
 import { LibraryItem } from './types';
 
 export const TAXONOMY = {
-  categories: ['ரிக் வேதம்', 'யஜுர் வேதம்', 'சாம வேதம்', 'அதர்வ வேதம்', 'உபநிஷதங்கள்', 'விளக்க உரை'],
-  tags: ['சமஸ்கிருதம்', 'தமிழ்', 'தத்துவம்', 'மந்திரங்கள்', 'சடங்குகள்', 'ஆன்மீகம்', 'வரலாறு', 'காப்பகம்', 'சுயாதீன ஆய்வு', 'விநாயகர்', 'பைபிள்', 'சைவம்', 'ஆண்டவர்கள்', 'சமரச வேதம்', 'தெய்வ நீதி', 'ஹதேஷ் குட்சி', 'ஆத்திசூடி', 'அன்று அன்று கிடைத்த அப்பம்', 'அரபு பாடங்களின் அர்த்தம்', 'இஸ்லாமிய படங்கள்', 'கியாமத் மகஸர் பாதை', 'மஹரிபத்']
+  categories: ['விளக்க உரை'],
+  tags: ['சமஸ்கிருதம்', 'தமிழ்', 'தத்துவம்', 'மந்திரங்கள்', 'சடங்குகள்', 'ஆன்மீகம்', 'வரலாறு', 'காப்பகம்', 'சுயாதீன ஆய்வு', 'விநாயகர்', 'பைபிள்', 'சைவம்', 'ஆண்டவர்கள்', 'சமரச வேதம்', 'தெய்வ நீதி', 'ஹதீஸ் குத்ஸி', 'ஆத்திசூடி', 'அன்று அன்று கிடைத்த அப்பம்', 'அரபு பாடங்களின் அர்த்தம்', 'இஸ்லாமிய படங்கள்', 'கியாமத் மகஸர் பாதை', 'மஹரிபத்']
 };
 
 export const INITIAL_LIBRARY: LibraryItem[] = [
@@ -236,13 +236,13 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
   },
   {
     id: '28',
-    title: 'ஹதேஷ் குட்சி',
+    title: 'ஹதீஸ் குத்ஸி',
     author: 'மெய்வழி புருஷோத்தம அனந்நர்',
     year: '—',
     category: 'விளக்க உரை',
-    tags: ['ஆன்மீகம்', 'தமிழ்', 'ஹதேஷ் குட்சி'],
-    summary: 'ஹதேஷ் குட்சி ஆன்மீக நூல்; ஆன்மீக உபதேசங்கள் மற்றும் தத்துவ சிந்தனைகளை உள்ளடக்கியது.',
-    filename: 'hathesh_kutsi.pdf',
+    tags: ['ஆன்மீகம்', 'தமிழ்', 'ஹதீஸ் குத்ஸி'],
+    summary: 'ஹதீஸ் குத்ஸி ஆன்மீக நூல்; ஆன்மீக உபதேசங்கள் மற்றும் தத்துவ சிந்தனைகளை உள்ளடக்கியது.',
+    filename: 'hadees_kutsi.pdf',
     coverColor: 'bg-lime-900',
     pdfUrl: 'https://drive.google.com/file/d/10FFKBpUFoSaeF-TdZNBjNrWkgfJ-0ZgY/view?usp=sharing'
   },
@@ -425,17 +425,5 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
     filename: 'maharibath.pdf',
     coverColor: 'bg-violet-800',
     pdfUrl: 'https://drive.google.com/file/d/151d0qqi49aMLyNIyb9_JgRk11H1_bsD5/view?usp=sharing'
-  },
-  {
-    id: '7',
-    title: 'வேதத்திற்கு அறிமுகம்',
-    author: 'பண்டைய அறிஞர்கள்',
-    year: 'பண்டைய காலம்',
-    category: 'விளக்க உரை',
-    tags: ['தத்துவம்', 'வரலாறு', 'சமஸ்கிருதம்'],
-    summary: 'நான்கு வேதங்களுக்கும் அவற்றின் அமைப்பு மற்றும் முக்கியத்துவம் பற்றிய விரிவான வழிகாட்டி மற்றும் அறிமுகம்.',
-    filename: 'intro_to_vedham.pdf',
-    coverColor: 'bg-amber-950',
-    pdfUrl: 'https://raw.githubusercontent.com/mozilla/pdf.js/ba2edeae/web/compressed.tracemonkey-pldi-09.pdf'
   }
 ];

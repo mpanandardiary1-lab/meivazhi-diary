@@ -31,7 +31,7 @@ export async function extractMetadataFromFilename(filename: string) {
           title: { type: Type.STRING, description: 'பிரித்தெடுக்கப்பட்ட அல்லது அனுமானிக்கப்பட்ட தலைப்பு (தமிழில்)' },
           author: { type: Type.STRING, description: 'பிரித்தெடுக்கப்பட்ட அல்லது அனுமானிக்கப்பட்ட ஆசிரியர் பெயர் (தமிழில்)' },
           year: { type: Type.STRING, description: 'பிரசுர ஆண்டு அல்லது "தெரியவில்லை"' },
-          category: { type: Type.STRING, description: 'பொருத்தமான வகை (எ.கா., தனிப்பட்ட நாட்குறிப்பு, ரிக் வேதம், விளக்க உரை)' },
+          category: { type: Type.STRING, description: 'பொருத்தமான வகை (எ.கா., விளக்க உரை)' },
           tags: { 
             type: Type.ARRAY, 
             items: { type: Type.STRING },
