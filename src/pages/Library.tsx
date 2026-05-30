@@ -26,6 +26,7 @@ import {
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
 
 // High-quality mock metadata generator for offline/simulated runs
 function simulateMetadata(filename: string) {
@@ -504,6 +505,28 @@ export function Library() {
                 <p className="font-bold text-slate-800">காப்பக நுண்ணறிவு மையம்</p>
                 <p className="text-[11px] text-slate-500 leading-relaxed uppercase tracking-wider font-semibold">
                   Google GenAI SDK வழியாக நேரடி இணைப்பு. விசை கண்டறியப்படவில்லை என்றால், உயர்தர உருவகப்படுத்தல் முறை செயல்படும்.
+                </p>
+              </div>
+            </div>
+
+            <div
+              role="note"
+              className="rounded-[2rem] p-6 flex items-start gap-4 text-sm border border-amber-500/25 bg-amber-500/5"
+            >
+              <AlertCircle className="w-5 h-5 text-amber-700 shrink-0 mt-0.5" aria-hidden="true" />
+              <div className="space-y-2 text-slate-600 leading-relaxed">
+                <p className="font-bold text-amber-900/90 text-xs uppercase tracking-widest">AI / Gemini பொறுப்புத் துறப்பு</p>
+                <p className="text-[11px]">
+                  Gemini (அல்லது உருவகப்படுத்தல்) வழியான தலைப்பு, ஆசிரியர், சுருக்கம் <strong>அனுமானம் மட்டுமே</strong> — மூல
+                  ஆவணத்தைச் சரிபார்க்காமல் நம்ப வேண்டாம். தனிப்பட்ட தரவை உள்ளிட வேண்டாம். விவரம்:{' '}
+                  <Link to="/disclaimer#ai-gemini" className="text-indigo-600 font-semibold hover:underline">
+                    பொறுப்புத் துறப்பு
+                  </Link>
+                  ,{' '}
+                  <Link to="/privacy" className="text-indigo-600 font-semibold hover:underline">
+                    தனியுரிமை
+                  </Link>
+                  .
                 </p>
               </div>
             </div>
