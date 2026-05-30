@@ -4,9 +4,9 @@ import { highlightPlugin, MessageIcon, RenderHighlightTargetProps, RenderHighlig
 import { pageNavigationPlugin } from '@react-pdf-viewer/page-navigation';
 import { fullScreenPlugin } from '@react-pdf-viewer/full-screen';
 import { zoomPlugin } from '@react-pdf-viewer/zoom';
-import { X, ChevronLeft, ChevronRight, MousePointer, Pencil, Type, Trash2, Maximize, ZoomIn, ZoomOut, ExternalLink } from 'lucide-react';
+import { X, ChevronLeft, ChevronRight, MousePointer, Pencil, Type, Trash2, Maximize, ZoomIn, ZoomOut } from 'lucide-react';
 import { motion } from 'motion/react';
-import { getGoogleDrivePreviewUrl, getGoogleDriveViewUrl } from '../utils/drive';
+import { getGoogleDrivePreviewUrlFromId } from '../utils/drive';
 
 import '@react-pdf-viewer/core/lib/styles/index.css';
 import '@react-pdf-viewer/highlight/lib/styles/index.css';
@@ -17,7 +17,8 @@ import '@react-pdf-viewer/zoom/lib/styles/index.css';
 interface PdfViewerModalProps {
   isOpen: boolean;
   onClose: () => void;
-  pdfUrl: string;
+  driveFileId?: string;
+  pdfUrl?: string;
   title: string;
 }
 
@@ -208,14 +209,16 @@ function HighlightNoteContent({
   );
 }
 
-export function PdfViewerModal({ isOpen, onClose, pdfUrl, title }: PdfViewerModalProps) {
+export function PdfViewerModal({ isOpen, onClose, driveFileId, pdfUrl, title }: PdfViewerModalProps) {
   const [notes, setNotes] = useState<Note[]>([]);
   const [annotations, setAnnotations] = useState<Annotation[]>([]);
   const [tool, setTool] = useState<'select' | 'draw' | 'text'>('select');
   const [readingProgress, setReadingProgress] = useState(0);
   
-  const drivePreviewUrl = React.useMemo(() => getGoogleDrivePreviewUrl(pdfUrl), [pdfUrl]);
-  const driveViewUrl = React.useMemo(() => getGoogleDriveViewUrl(pdfUrl), [pdfUrl]);
+  const drivePreviewUrl = React.useMemo(
+    () => (driveFileId ? getGoogleDrivePreviewUrlFromId(driveFileId) : null),
+    [driveFileId],
+  );
   const isDrivePdf = drivePreviewUrl !== null;
 
   const pageNavigationPluginInstance = pageNavigationPlugin();
@@ -286,10 +289,14 @@ export function PdfViewerModal({ isOpen, onClose, pdfUrl, title }: PdfViewerModa
     setReadingProgress((current / total) * 100);
   };
 
+  const handleContextMenu = (e: React.MouseEvent) => {
+    if (isDrivePdf) e.preventDefault();
+  };
+
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-[#0a0514]/90 backdrop-blur-xl flex flex-col z-[100]">
+    <div className="fixed inset-0 bg-[#0a0514]/90 backdrop-blur-xl flex flex-col z-[100]" onContextMenu={handleContextMenu}>
       <style>{`
         .custom-page-input input {
           width: 100%;
@@ -412,18 +419,6 @@ export function PdfViewerModal({ isOpen, onClose, pdfUrl, title }: PdfViewerModa
         )}
 
         <div className="flex-1 flex justify-end items-center gap-3">
-          {isDrivePdf && driveViewUrl && (
-            <a
-              href={driveViewUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 px-3 py-2 text-white/70 hover:text-white hover:bg-white/10 rounded-xl transition-all text-sm"
-              title="Google Drive-இல் திற"
-            >
-              <ExternalLink className="w-4 h-4" />
-              <span className="hidden sm:inline">Drive-இல் திற</span>
-            </a>
-          )}
           {!isDrivePdf && fullScreenPluginInstance.EnterFullScreen && (
             <fullScreenPluginInstance.EnterFullScreen>
               {(props) => (
@@ -447,15 +442,16 @@ export function PdfViewerModal({ isOpen, onClose, pdfUrl, title }: PdfViewerModa
         </div>
       </div>
       
-      <div className="flex-1 w-full h-full overflow-hidden bg-black/20 relative">
+      <div className="flex-1 w-full h-full overflow-hidden bg-black/20 relative" onContextMenu={handleContextMenu}>
         {isDrivePdf && drivePreviewUrl ? (
           <iframe
             src={drivePreviewUrl}
             title={title}
             className="w-full h-full border-0 bg-white"
             allow="autoplay"
+            sandbox="allow-scripts allow-same-origin allow-popups"
           />
-        ) : (
+        ) : pdfUrl ? (
         <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js">
           <Viewer
             fileUrl={pdfUrl}
@@ -464,7 +460,7 @@ export function PdfViewerModal({ isOpen, onClose, pdfUrl, title }: PdfViewerModa
             onPageChange={handlePageChange}
           />
         </Worker>
-        )}
+        ) : null}
       </div>
     </div>
   );
