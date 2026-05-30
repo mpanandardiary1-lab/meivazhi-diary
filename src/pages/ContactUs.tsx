@@ -18,7 +18,7 @@ export function ContactUs() {
   return (
     <div className="flex-1 max-w-6xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-12 flex flex-col lg:flex-row gap-16 relative z-10 pt-24">
       <Helmet>
-        <title>எங்களைத் தொடர்பு கொள்ளுங்கள் - மெய்வழி புருஷோத்தம ஆனந்தர் ஆன்மீக நாட்குறிப்பு</title>
+        <title>எங்களைத் தொடர்பு கொள்ளுங்கள் - மெய்வழி புருஷோத்தம அனந்நர் ஆன்மீக நாட்குறிப்பு</title>
         <meta name="description" content="காப்பகப் பொருட்கள் பற்றிய கேள்விகளுக்கு அல்லது வரலாற்று ஆன்மீக பதிவுகளைப் பங்களிப்பதற்கு எங்களைத் தொடர்பு கொள்ளுங்கள்." />
         <link rel="canonical" href="https://mpanandardiary.com/contact" />
       </Helmet>
