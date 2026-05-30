@@ -2,7 +2,7 @@ import { LibraryItem } from './types';
 
 export const TAXONOMY = {
   categories: ['ரிக் வேதம்', 'யஜுர் வேதம்', 'சாம வேதம்', 'அதர்வ வேதம்', 'உபநிஷதங்கள்', 'விளக்க உரை'],
-  tags: ['சமஸ்கிருதம்', 'தமிழ்', 'தத்துவம்', 'மந்திரங்கள்', 'சடங்குகள்', 'ஆன்மீகம்', 'வரலாறு', 'காப்பகம்', 'சுயாதீன ஆய்வு', 'விநாயகர்', 'பைபிள்', 'சைவம்', 'ஆண்டவர்கள்', 'சமரச வேதம்']
+  tags: ['சமஸ்கிருதம்', 'தமிழ்', 'தத்துவம்', 'மந்திரங்கள்', 'சடங்குகள்', 'ஆன்மீகம்', 'வரலாறு', 'காப்பகம்', 'சுயாதீன ஆய்வு', 'விநாயகர்', 'பைபிள்', 'சைவம்', 'ஆண்டவர்கள்', 'சமரச வேதம்', 'தெய்வ நீதி']
 };
 
 export const INITIAL_LIBRARY: LibraryItem[] = [
@@ -185,6 +185,54 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
     filename: 'samarasa_vetha_ennam_part4.pdf',
     coverColor: 'bg-emerald-900',
     pdfUrl: 'https://drive.google.com/file/d/1-iUQUa8FihEg8cmXQdOIM9SL9UqhsWFg/view?usp=sharing'
+  },
+  {
+    id: '24',
+    title: 'தெய்வ நீதி - பாகம் 1',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
+    year: '—',
+    category: 'விளக்க உரை',
+    tags: ['ஆன்மீகம்', 'தமிழ்', 'தெய்வ நீதி'],
+    summary: 'தெய்வ நீதி ஆன்மீக நூலின் முதல் பாகம்; தெய்வீக நீதி மற்றும் ஆன்மீக உபதேசங்களை உள்ளடக்கியது.',
+    filename: 'theiva_neethi_part1.pdf',
+    coverColor: 'bg-rose-900',
+    pdfUrl: 'https://drive.google.com/file/d/1-r9LYfgy5MMtzGYyLD8NbSjpI01zQsCa/view?usp=sharing'
+  },
+  {
+    id: '25',
+    title: 'தெய்வ நீதி - பாகம் 2',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
+    year: '—',
+    category: 'விளக்க உரை',
+    tags: ['ஆன்மீகம்', 'தமிழ்', 'தெய்வ நீதி'],
+    summary: 'தெய்வ நீதி ஆன்மீக நூலின் இரண்டாம் பாகம்; தொடர்ச்சியான தெய்வீக நீதி உபதேசங்களை வழங்குகிறது.',
+    filename: 'theiva_neethi_part2.pdf',
+    coverColor: 'bg-pink-900',
+    pdfUrl: 'https://drive.google.com/file/d/10ArWIw9ZMFfkdmnBb-mTLnTlWqbU6hKf/view?usp=sharing'
+  },
+  {
+    id: '26',
+    title: 'தெய்வ நீதி - பாகம் 3',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
+    year: '—',
+    category: 'விளக்க உரை',
+    tags: ['ஆன்மீகம்', 'தமிழ்', 'தெய்வ நீதி'],
+    summary: 'தெய்வ நீதி ஆன்மீக நூலின் மூன்றாம் பாகம்; ஆழமான தெய்வீக நீதி சிந்தனைகள் மற்றும் உபதேசங்களை உள்ளடக்கியது.',
+    filename: 'theiva_neethi_part3.pdf',
+    coverColor: 'bg-fuchsia-900',
+    pdfUrl: 'https://drive.google.com/file/d/10BmoTQGcuuv0qexVz-Pf0f7LWCIlefXJ/view?usp=sharing'
+  },
+  {
+    id: '27',
+    title: 'தெய்வ நீதி - பாகம் 4',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
+    year: '—',
+    category: 'விளக்க உரை',
+    tags: ['ஆன்மீகம்', 'தமிழ்', 'தெய்வ நீதி'],
+    summary: 'தெய்வ நீதி ஆன்மீக நூலின் நான்காம் பாகம்; தொடர் நூலின் இறுதிப் பகுதி; தெய்வீக நீதி உபதேசங்களை நிறைவு செய்கிறது.',
+    filename: 'theiva_neethi_part4.pdf',
+    coverColor: 'bg-purple-900',
+    pdfUrl: 'https://drive.google.com/file/d/10EA7Do6kdilsUqhikeOBH8unBi-TmYaz/view?usp=sharing'
   },
   {
     id: '7',
