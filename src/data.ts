@@ -2,7 +2,7 @@ import { LibraryItem } from './types';
 
 export const TAXONOMY = {
   categories: ['ரிக் வேதம்', 'யஜுர் வேதம்', 'சாம வேதம்', 'அதர்வ வேதம்', 'உபநிஷதங்கள்', 'விளக்க உரை'],
-  tags: ['சமஸ்கிருதம்', 'தமிழ்', 'தத்துவம்', 'மந்திரங்கள்', 'சடங்குகள்', 'ஆன்மீகம்', 'வரலாறு', 'காப்பகம்', 'சுயாதீன ஆய்வு', 'விநாயகர்', 'பைபிள்', 'சைவம்', 'ஆண்டவர்கள்', 'சமரச வேதம்', 'தெய்வ நீதி', 'ஹதேஷ் குட்சி', 'ஆதிசூடி']
+  tags: ['சமஸ்கிருதம்', 'தமிழ்', 'தத்துவம்', 'மந்திரங்கள்', 'சடங்குகள்', 'ஆன்மீகம்', 'வரலாறு', 'காப்பகம்', 'சுயாதீன ஆய்வு', 'விநாயகர்', 'பைபிள்', 'சைவம்', 'ஆண்டவர்கள்', 'சமரச வேதம்', 'தெய்வ நீதி', 'ஹதேஷ் குட்சி', 'ஆதிசூடி', 'அன்று அன்று கிடைத்த அப்பம்']
 };
 
 export const INITIAL_LIBRARY: LibraryItem[] = [
@@ -281,6 +281,30 @@ export const INITIAL_LIBRARY: LibraryItem[] = [
     filename: 'aathisudi_part3.pdf',
     coverColor: 'bg-emerald-800',
     pdfUrl: 'https://drive.google.com/file/d/11oKBcmAg5mlQZy-Zt5GbCoqKvxL-3eEJ/view?usp=sharing'
+  },
+  {
+    id: '32',
+    title: 'அன்று அன்று கிடைத்த அப்பம் - பாகம் 1',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
+    year: '—',
+    category: 'விளக்க உரை',
+    tags: ['ஆன்மீகம்', 'தமிழ்', 'அன்று அன்று கிடைத்த அப்பம்'],
+    summary: 'அன்று அன்று கிடைத்த அப்பம் ஆன்மீக நூலின் முதல் பாகம்; ஆன்மீக உபதேசங்கள் மற்றும் தத்துவ சிந்தனைகளை உள்ளடக்கியது.',
+    filename: 'anru_anru_kidaitha_appam_part1.pdf',
+    coverColor: 'bg-orange-700',
+    pdfUrl: 'https://drive.google.com/file/d/13TEHQq4WjsRARjyh00pSntoq2f17J8xZ/view?usp=sharing'
+  },
+  {
+    id: '33',
+    title: 'அன்று அன்று கிடைத்த அப்பம் - பாகம் 2',
+    author: 'மெய்வழி புருஷோத்தம அனந்நர்',
+    year: '—',
+    category: 'விளக்க உரை',
+    tags: ['ஆன்மீகம்', 'தமிழ்', 'அன்று அன்று கிடைத்த அப்பம்'],
+    summary: 'அன்று அன்று கிடைத்த அப்பம் ஆன்மீக நூலின் இரண்டாம் பாகம்; தொடர்ச்சியான ஆன்மீக உபதேசங்கள் மற்றும் தத்துவ சிந்தனைகளை வழங்குகிறது.',
+    filename: 'anru_anru_kidaitha_appam_part2.pdf',
+    coverColor: 'bg-amber-700',
+    pdfUrl: 'https://drive.google.com/file/d/13TvFB9SG_b-7qTLn0ep4Qcnhlvk-37u5/view?usp=sharing'
   },
   {
     id: '7',
